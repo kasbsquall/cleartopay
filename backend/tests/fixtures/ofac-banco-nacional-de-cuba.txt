@@ -1,0 +1,316 @@
+
+
+
+
+	
+
+ 
+
+Sanctions List Search
+
+	 
+Specially Designated Nationals and Blocked Persons list ("SDN List") and all other sanctions lists administered by OFAC, including the Foreign Sanctions Evaders List, the Non-SDN Iran Sanctions Act List, the Sectoral Sanctions Identifications List, the List of Foreign Financial Institutions Subject to Correspondent Account or Payable-Through Account Sanctions and the Non-SDN Palestinian Legislative Council List. Given the number of lists that now reside in the Sanctions List Search tool, it is strongly recommended that users pay close attention to the program codes associated with each returned record. These program codes indicate how a true hit on a returned value should be treated. The Sanctions List Search tool uses approximate string matching to identify possible matches between word or character strings as entered into Sanctions List Search, and any name or name component as it appears on the SDN List and/or the various other sanctions lists. Sanctions List Search has a slider-bar that may be used to set a threshold (i.e., a confidence rating) for the closeness of any potential match returned as a result of a user's search. Sanctions List Search will detect certain misspellings or other incorrectly entered text, and will return near, or proximate, matches, based on the confidence rating set by the user via the slider-bar. OFAC does not provide recommendations with regard to the appropriateness of any specific confidence rating. Sanctions List Search is one tool offered to assist users in utilizing the SDN List and/or the various other sanctions lists; use of Sanctions List Search is not a substitute for undertaking appropriate due diligence. The use of Sanctions List Search does not limit any criminal or civil liability for any act undertaken as a result of, or in reliance on, such use.
+ 
+Download the SDN List	Sanctions List Search: Rules for use	Visit The OFAC Website
+ 
+Download the Consolidated Non-SDN List		Program Code Key
+Lookup
+ 	Type:	
+All
+Aircraft
+Entity
+Individual
+Vessel
+	Address:	
+ 	Name:		City:	
+ 	ID # / Digital Currency Address:		State/Province:*	
+ 	Program:	
+All
+561-Related
+BALKANS
+BALKANS-EO14033
+BELARUS
+BELARUS-EO14038
+BURMA-EO14014
+CAATSA - IRAN
+CAATSA - RUSSIA
+CAR
+CMIC-EO13959
+CUBA
+CUBA-EO14404
+CYBER2
+CYBER3
+CYBER4
+DARFUR
+DPRK
+DPRK2
+DPRK3
+DPRK4
+DPRK-NKSPEA
+DRCONGO
+ELECTION-EO13848
+FTO
+GLOMAG
+HKAA
+HOSTAGES-EO14078
+HRIT-IR
+HRIT-SY
+ICC-EO14203
+IFCA
+IFSR
+ILLICIT-DRUGS-EO14059
+IRAN
+IRAN-CON-ARMS-EO
+IRAN-EO13846
+IRAN-EO13871
+IRAN-EO13876
+IRAN-EO13902
+IRAN-HR
+IRAN-TRA
+IRAQ2
+IRAQ3
+IRGC
+LEBANON
+LIBYA2
+LIBYA3
+MAGNIT
+MALI-EO13882
+NICARAGUA
+NICARAGUA-NHRAA
+NPWMD
+NS-PLC
+PAARSSR-EO13894
+PAIPA
+PEESA-EO14039
+RUSSIA-EO14024
+RUSSIA-EO14065
+SDGT
+SDNT
+SDNTK
+SOMALIA
+SOUTH SUDAN
+SSIDES
+SUDAN-EO14098
+TCO
+UHRPA
+UKRAINE-EO13660
+UKRAINE-EO13661
+UKRAINE-EO13662
+UKRAINE-EO13685
+VENEZUELA
+VENEZUELA-EO13850
+VENEZUELA-EO13884
+YEMEN
+	
+Country:
+List:
+	
+All
+Afghanistan
+Albania
+Algeria
+Angola
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Bahamas, The
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bolivia
+Bosnia and Herzegovina
+Brazil
+Bulgaria
+Burkina Faso
+Burma
+Cambodia
+Canada
+Cayman Islands
+Central African Republic
+Chile
+China
+Colombia
+Comoros
+Congo, Democratic Republic of the
+Congo, Republic of the
+Costa Rica
+Cote d Ivoire
+Croatia
+Cuba
+Curacao
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Finland
+France
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Guatemala
+Guernsey
+Guinea
+Guyana
+Haiti
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Korea, North
+Korea, South
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Malaysia
+Maldives
+Mali
+Malta
+Man, Isle of
+Marshall Islands
+Mauritania
+Mauritius
+Mexico
+Moldova
+Monaco
+Mongolia
+Montenegro
+Morocco
+Mozambique
+Namibia
+Netherlands
+New Zealand
+Nicaragua
+Niger
+Nigeria
+North Macedonia, The Republic of
+Norway
+Oman
+Pakistan
+Palau
+Palestinian
+Panama
+Paraguay
+Peru
+Philippines
+Poland
+Portugal
+Qatar
+Region: Commonwealth of Independent States
+Region: Crimea
+Region: Gaza
+Region: Iran
+Region: Jammu and Kashmir
+Region: Kafia Kingi
+Region: Kashmir
+Region: North Gaza
+Region: Northern Gaza
+Region: Northern Mali
+Region: Russia
+Region: West Bank
+Romania
+Russia
+Rwanda
+Saint Kitts and Nevis
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Somalia
+South Africa
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+The Gambia
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+Uzbekistan
+Venezuela
+Vietnam
+Virgin Islands, British
+West Bank
+Yemen
+Zambia
+Zimbabwe
+All
+Non-SDN
+SDN
+
+ 	Minimum Name Score:	
+	
+		   
+
+
+Lookup Results: 1 Found
+Name	Address	Type	Program(s)	List	Score 
+BANCO NACIONAL DE CUBA	Zweierstrasse 35	Entity	CUBA	SDN	100
+* U.S. states are abbreviated on the SDN and Non-SDN lists. To search for a specific U.S. state, please use the two letter U.S. Postal Service abbreviation.
+SDN List last updated on: 10/28/2026 10:03:02 AM
+Non-SDN List last updated on: 10/19/2026 10:02:09 AM
+
+ 

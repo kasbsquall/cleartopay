@@ -10,3 +10,4 @@ evidence/
 *.sqlite3
 .DS_Store
 sandbox/pylib/
+.pytest_cache/
