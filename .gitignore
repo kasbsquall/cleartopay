@@ -1,0 +1,12 @@
+.env
+*.env.local
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+dist/
+data/
+evidence/
+*.sqlite3
+.DS_Store
+sandbox/pylib/
