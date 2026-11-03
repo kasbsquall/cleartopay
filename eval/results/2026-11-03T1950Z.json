@@ -1,0 +1,629 @@
+{
+  "k": 1,
+  "cases_file_built_at": "2026-11-03T19:36:16+00:00",
+  "summary": {
+    "runs": 30,
+    "decision_correct": 27,
+    "dangerous_misses": 0,
+    "false_alarms": 3,
+    "runs_with_check_errors": 0,
+    "runs_with_check_mismatch": 0,
+    "sandboxes_not_destroyed": 0,
+    "avg_seconds_per_vendor": 27.9,
+    "by_group": {
+      "clean": {
+        "runs": 12,
+        "decision_correct": 9,
+        "dangerous_misses": 0,
+        "false_alarms": 3,
+        "runs_with_check_errors": 0,
+        "runs_with_check_mismatch": 0,
+        "sandboxes_not_destroyed": 0,
+        "avg_seconds_per_vendor": 27.9
+      },
+      "ofac_sdn": {
+        "runs": 8,
+        "decision_correct": 8,
+        "dangerous_misses": 0,
+        "false_alarms": 0,
+        "runs_with_check_errors": 0,
+        "runs_with_check_mismatch": 0,
+        "sandboxes_not_destroyed": 0,
+        "avg_seconds_per_vendor": 28.0
+      },
+      "sam_exclusion": {
+        "runs": 8,
+        "decision_correct": 8,
+        "dangerous_misses": 0,
+        "false_alarms": 0,
+        "runs_with_check_errors": 0,
+        "runs_with_check_mismatch": 0,
+        "sandboxes_not_destroyed": 0,
+        "avg_seconds_per_vendor": 27.8
+      },
+      "tricky": {
+        "runs": 2,
+        "decision_correct": 2,
+        "dangerous_misses": 0,
+        "false_alarms": 0,
+        "runs_with_check_errors": 0,
+        "runs_with_check_mismatch": 0,
+        "sandboxes_not_destroyed": 0,
+        "avg_seconds_per_vendor": 27.9
+      }
+    },
+    "wall_seconds": 838.1
+  },
+  "runs": [
+    {
+      "case": "AEROCARIBBEAN AIRLINES",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.18,
+      "manifest_sha256": "d3c0892bb0532dbc7617f91e47bd8a3afbb94773cdc1cd4d4e40e12474b51870"
+    },
+    {
+      "case": "BANK MARKAZI JOMHOURI ISLAMI IRAN",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.56,
+      "manifest_sha256": "b684c0cb8863a65ac7d23bd6b3178a3efa47de8ed986f441ae483895c3171a46"
+    },
+    {
+      "case": "QODS AVIATION INDUSTRIES",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.33,
+      "manifest_sha256": "517f4ccea1c505d5dd7319034a6ab53e05af4519226b6231420e668b33f68061"
+    },
+    {
+      "case": "OFFICE 39",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.77,
+      "manifest_sha256": "1efbdbce680b62e28c574171d5226927095ee9c3c34da03e5eda55d492b32541"
+    },
+    {
+      "case": "ROSNEFT TRADING S.A.",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.51,
+      "manifest_sha256": "0bfa967f35a2fc7e51cf8b9225e255298f1cb6c27ab9b0974a1d6d4e9c06672c"
+    },
+    {
+      "case": "BANK SADERAT PLC",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.56,
+      "manifest_sha256": "901a312541ed9982dd1fcbac5e4a91d1953c828f332e1d78a1c01b7ec60d498c"
+    },
+    {
+      "case": "FLEURETTE PROPERTIES LIMITED",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.59,
+      "manifest_sha256": "b1e217cd9edba9bd24b80dfe8b4f636672792e86b1e274ff212a9b4fd8e50f95"
+    },
+    {
+      "case": "ALBANIAN NATIONAL ARMY",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.73,
+      "manifest_sha256": "77404c84cb0013cb1ae9d8819d61db159e11785b6deef972b0a2eac4cf559afd"
+    },
+    {
+      "case": "RLM Construction Co.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.76,
+      "manifest_sha256": "13e86e0fd8b48239512803167c11d8c9a9d9539ff4582755001257bbefdd9ba3"
+    },
+    {
+      "case": "Morales Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.94,
+      "manifest_sha256": "a4509bec429ada59b9e44070219edc489709561ae4378ee4c2012f8f6fc8dda0"
+    },
+    {
+      "case": "Cantillon Construction Co.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.13,
+      "manifest_sha256": "78f4a575d04ef8488118effebe17bbef35dfb29e1df312bd6ac4849b6ce1a28c"
+    },
+    {
+      "case": "TAB CONSTRUCTION COMPANY, INC.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.07,
+      "manifest_sha256": "a5a2b69d2e1bd2d98fe43047f39115a5598d39cd7518afe2d0c8db712702a2b6"
+    },
+    {
+      "case": "Donora Construction Corp.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.52,
+      "manifest_sha256": "46ec013bacfaad17fc6b305211e6dab2c7184ba7519407b653cb63384200ea9c"
+    },
+    {
+      "case": "Newton-Pollack Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.12,
+      "manifest_sha256": "7ff0e15ab12ac2ef2750feef79a51cfe8157c4db0e15ceb59f1cd8c3faefa465"
+    },
+    {
+      "case": "Poff Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.55,
+      "manifest_sha256": "dd45b92f2329622fbd30a139030218237b6648383a7f7d811307de1dd68bf2a8"
+    },
+    {
+      "case": "Blaine Construction Company, Inc.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.58,
+      "manifest_sha256": "9fe835b6d252564516dbc3e08749a35832dcd31a2c5d2937a6ba057f9943983a"
+    },
+    {
+      "case": "Microsoft Corporation",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.71,
+      "manifest_sha256": "bc14ad845e9b2e584cba0e5072439cb4ad5d94597f1c78df9061b150e052d647"
+    },
+    {
+      "case": "Ball Corporation",
+      "group": "clean",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.13,
+      "manifest_sha256": "7fd24427b3903fbd1975ac964d63420160f1ec14685aa158e8e0da58cc28cef1"
+    },
+    {
+      "case": "DaVita Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.12,
+      "manifest_sha256": "2faed2076d8efee25833787805dc552253d5731dddec831c18af8219be6b51b4"
+    },
+    {
+      "case": "Vail Resorts, Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.76,
+      "manifest_sha256": "475c63aae49a56a5ae856f01c3ce63bfde9114f66a0b64fa4590ae282027c9f9"
+    },
+    {
+      "case": "Newmont Corporation",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.71,
+      "manifest_sha256": "f8d85c81660ab39a5fada6c391c3e65c706992f6aa0097c900ce9c24238c5232"
+    },
+    {
+      "case": "Arrow Electronics, Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.89,
+      "manifest_sha256": "4804fba35fcc93b11c408a52a48998d49108e470068eacebd062f5fd52274acb"
+    },
+    {
+      "case": "Molson Coors Beverage Company",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.28,
+      "manifest_sha256": "01f8c65ca2108d2b620bc35acfd7abf9d2e4e435bcb266dc451f4fac2cfbcc63"
+    },
+    {
+      "case": "The Western Union Company",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 29.17,
+      "manifest_sha256": "7a69aa1733d77aff7c345da1101f875a524412f81e336931abcea549ed255a0b"
+    },
+    {
+      "case": "Crocs, Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.44,
+      "manifest_sha256": "29e15ce0b33f84fdc2f05212926d70c36bf83080717bba82b95fdfb7a906199e"
+    },
+    {
+      "case": "Advanced Energy Industries, Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.27,
+      "manifest_sha256": "9f05699581cb3cbcdaeb65e15bec982a87c6ee2de88160704d34390b90b9dcbc"
+    },
+    {
+      "case": "Ovintiv Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.32,
+      "manifest_sha256": "49d314c9941a9815c86eab7d6b7dccba2f04bc707e39e80a35b5f75898096803"
+    },
+    {
+      "case": "Frontier Airlines, Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.54,
+      "manifest_sha256": "587e745670c1c3174b1272264b0f4f02f49b0f5a8ed0bb78e6a4638ea8ff8594"
+    },
+    {
+      "case": "Banco Nacional Cuba",
+      "group": "tricky",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.82,
+      "manifest_sha256": "02bee12ff58df1c78158f59e9222b7f4f1f1006ff657ae380fca77b528dc4554"
+    },
+    {
+      "case": "Zzqx Imaginary Vendor LLC",
+      "group": "tricky",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.94,
+      "manifest_sha256": "a2be4d6f8aa3e0cf2f4ce08b8e015e307102906106cc88ad42cc13512784b007"
+    }
+  ]
+}

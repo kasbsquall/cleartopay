@@ -1,0 +1,373 @@
+{
+  "built_at": "2026-11-03T19:36:16+00:00",
+  "sources": {
+    "ofac": {
+      "url": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN.CSV",
+      "sha256": "5f240bed79d504e7a54788b4cd1c7f84e6afa56cd4778653b70b0771b6a8509d"
+    },
+    "sam": "sam.gov exclusions search, read by hand 2026-11-03; names and UEIs above",
+    "colorado": "https://data.colorado.gov/resource/4ykn-tg5h.json"
+  },
+  "cases": [
+    {
+      "name": "AEROCARIBBEAN AIRLINES",
+      "group": "ofac_sdn",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "ofac": "hit",
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "BANK MARKAZI JOMHOURI ISLAMI IRAN",
+      "group": "ofac_sdn",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "ofac": "hit",
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "QODS AVIATION INDUSTRIES",
+      "group": "ofac_sdn",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "ofac": "hit",
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "OFFICE 39",
+      "group": "ofac_sdn",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "ofac": "hit",
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "ROSNEFT TRADING S.A.",
+      "group": "ofac_sdn",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "ofac": "hit",
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "BANK SADERAT PLC",
+      "group": "ofac_sdn",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "ofac": "hit",
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "FLEURETTE PROPERTIES LIMITED",
+      "group": "ofac_sdn",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "ofac": "hit",
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "ALBANIAN NATIONAL ARMY",
+      "group": "ofac_sdn",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "ofac": "hit",
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "RLM Construction Co.",
+      "group": "sam_exclusion",
+      "uei": "U5CHAE944Y47",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "sam": "hit",
+        "ofac_on_sdn": false,
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Morales Construction, Inc.",
+      "group": "sam_exclusion",
+      "uei": "K4LRYRWGDMM3",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "sam": "hit",
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      }
+    },
+    {
+      "name": "Cantillon Construction Co.",
+      "group": "sam_exclusion",
+      "uei": "LC27MFU2W8Q1",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "sam": "hit",
+        "ofac_on_sdn": false,
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "TAB CONSTRUCTION COMPANY, INC.",
+      "group": "sam_exclusion",
+      "uei": "EZD7RT2D2MP4",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "sam": "hit",
+        "ofac_on_sdn": false,
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Donora Construction Corp.",
+      "group": "sam_exclusion",
+      "uei": "KLU3LDAGYC94",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "sam": "hit",
+        "ofac_on_sdn": false,
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Newton-Pollack Construction, Inc.",
+      "group": "sam_exclusion",
+      "uei": "MFHDANCFMK24",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "sam": "hit",
+        "ofac_on_sdn": false,
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Poff Construction, Inc.",
+      "group": "sam_exclusion",
+      "uei": "N2BAU6WNMGV8",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "sam": "hit",
+        "ofac_on_sdn": false,
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Blaine Construction Company, Inc.",
+      "group": "sam_exclusion",
+      "uei": "E7DNZYYHHNT4",
+      "expected_decision": [
+        "blocked"
+      ],
+      "expected": {
+        "sam": "hit",
+        "ofac_on_sdn": false,
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Microsoft Corporation",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Ball Corporation",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "DaVita Inc.",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Vail Resorts, Inc.",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Newmont Corporation",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Arrow Electronics, Inc.",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Molson Coors Beverage Company",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "The Western Union Company",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Crocs, Inc.",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Advanced Energy Industries, Inc.",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Ovintiv Inc.",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Frontier Airlines, Inc.",
+      "group": "clean",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Banco Nacional Cuba",
+      "group": "tricky",
+      "why": "SDN entity BANCO NACIONAL DE CUBA with one word dropped",
+      "expected_decision": [
+        "needs_human",
+        "blocked"
+      ],
+      "expected": {
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Zzqx Imaginary Vendor LLC",
+      "group": "tricky",
+      "why": "not registered anywhere we check",
+      "expected_decision": [
+        "needs_human",
+        "blocked"
+      ],
+      "expected": {
+        "colorado": "review"
+      }
+    }
+  ]
+}

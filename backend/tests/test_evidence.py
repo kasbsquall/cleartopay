@@ -30,6 +30,16 @@ def test_record_keeps_containment_facts_and_hashes(tmp_path):
     assert rec["records"] == [{"name": "X", "list": "SDN"}]
 
 
+def test_decide_blocks_on_any_hit_and_clears_only_when_all_clean():
+    from app.pipeline import decide
+
+    assert decide([{"verdict": "clear"}, {"verdict": "hit"}, {"verdict": "error"}]) == "blocked"
+    assert decide([{"verdict": "clear"}, {"verdict": "verified"}]) == "clear_to_pay"
+    assert decide([{"verdict": "clear"}, {"verdict": "error"}]) == "needs_human"
+    assert decide([{"verdict": "clear"}, {"verdict": "review"}]) == "needs_human"
+    assert decide([]) == "needs_human"
+
+
 def test_manifest_digest_changes_when_any_record_changes():
     records = [{"check": "ofac", "verdict": "clear"}]
     tampered = [{"check": "ofac", "verdict": "hit"}]
