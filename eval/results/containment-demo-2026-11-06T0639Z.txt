@@ -1,0 +1,9 @@
+[06:39:59] outside, on the VM itself: GET https://example.com/ -> HTTP 200
+[06:39:59] create microVM ctp-demo-vendor-site: 1 vCPU, 2048 MiB, egress allowed only to pinecrest.45-76-12-143.sslip.io
+[06:40:01] inside: GET https://pinecrest.45-76-12-143.sslip.io/ -> HTTP 200
+[06:40:01] inside: GET https://example.com/ -> BLOCKED ([Errno -2] Name or service not known)
+[06:40:01] inside: GET https://pinecrest-collect.example/k -> BLOCKED ([Errno -2] Name or service not known)
+[06:40:01] inside: GET https://api.vultrinference.com/v1/models -> BLOCKED ([Errno -2] Name or service not known)
+[06:40:01] inside: 11 variables: CURL_CA_BUNDLE HOME KRUN_BOOT_START_NS LANG LC_ALL NODE_EXTRA_CA_CERTS PATH PLAYWRIGHT_BROWSERS_PATH REQUESTS_CA_BUNDLE SSL_CERT_FILE TERM
+[06:40:01] inside: key-like names: none
+[06:40:01] destroyed; still exists: False

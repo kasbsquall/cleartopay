@@ -46,8 +46,9 @@ def site_host(website: str) -> str:
 
 def build(vendor: Vendor) -> ProbeSpec:
     host = site_host(vendor.website)
+    path = urlsplit(vendor.website if "://" in vendor.website else f"https://{vendor.website}").path or "/"
     return ProbeSpec(check=NAME, query=vendor.website, allowed_hosts=(host,),
-                     task={"url": f"https://{host}/", "timeout_ms": 30000, "steps": [{"do": "wait_ms", "ms": 2000}]})
+                     task={"url": f"https://{host}{path}", "timeout_ms": 30000, "steps": [{"do": "wait_ms", "ms": 2000}]})
 
 
 def tripwire(text: str) -> list[str]:
@@ -61,7 +62,9 @@ def tripwire(text: str) -> list[str]:
 
 async def read_site(text: str) -> dict:
     try:
-        answer = await chat_json(MODEL, [{"role": "user", "content": READER_PROMPT.format(text=text[:6000])}])
+        # glm-5.3 reasons for ~900 tokens on a short page before answering; 1500 ran out on real pages
+        answer = await chat_json(MODEL, [{"role": "user", "content": READER_PROMPT.format(text=text[:6000])}],
+                                 max_tokens=4000, timeout=120)
     except InferenceError as exc:
         return {"model": MODEL, "error": str(exc)[:200]}
     data = answer["data"]
