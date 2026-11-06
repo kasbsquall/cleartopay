@@ -1,0 +1,28 @@
+45-76-12-143.sslip.io {
+	encode zstd gzip
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		X-Frame-Options DENY
+		Referrer-Policy strict-origin-when-cross-origin
+		-Server
+	}
+	handle /api/* {
+		reverse_proxy 127.0.0.1:8000
+	}
+	handle {
+		root * /srv/cleartopay
+		try_files {path} /index.html
+		file_server
+	}
+}
+
+# Seeded demo vendor website (fictional company, deliberate prompt-injection test). Declared as such in the UI and README.
+pinecrest.45-76-12-143.sslip.io {
+	header {
+		X-Robots-Tag "noindex"
+		-Server
+	}
+	root * /srv/pinecrest
+	file_server
+}

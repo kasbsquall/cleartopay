@@ -11,3 +11,5 @@ evidence/
 .DS_Store
 sandbox/pylib/
 .pytest_cache/
+.ui-direcciones/
+!frontend/dist/

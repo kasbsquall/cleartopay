@@ -1,0 +1,19 @@
+[Unit]
+Description=ClearToPay API (127.0.0.1 only; Caddy is the public face)
+After=network-online.target
+
+[Service]
+User=ctp
+WorkingDirectory=/home/ctp/cleartopay/backend
+EnvironmentFile=/home/ctp/cleartopay/.env
+ExecStart=/home/ctp/cleartopay/.venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000 --workers 1
+Restart=on-failure
+# The API plus one 1 vCPU / 2 GiB microVM at a time fits well inside these caps.
+MemoryMax=5G
+CPUQuota=190%
+TasksMax=512
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

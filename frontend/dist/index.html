@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClearToPay</title>
+<meta name="description" content="Check a new vendor against OFAC, SAM.gov and the Colorado business registry before you pay them. Each check runs in its own disposable microVM.">
+<meta name="theme-color" content="#0f1824">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Crect x='2.5' y='5' width='19' height='14' fill='%23111a26' stroke='%23e8902f' stroke-width='1.8'/%3E%3Cpath d='M2.5 12h19' stroke='%233f86d8' stroke-width='1.8'/%3E%3Cpath d='M12 5v14' stroke='%2349c97d' stroke-width='1.8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sofia+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="top">
+  <a class="brand" href="/" data-nav>
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" stroke="oklch(72% .15 60)" stroke-width="1.5"/><path d="M2.5 12h19" stroke="oklch(62% .14 245)" stroke-width="1.5"/><path d="M12 5v14" stroke="oklch(76% .15 150)" stroke-width="1.5"/></svg>
+    ClearToPay
+  </a>
+  <nav class="nav" aria-label="Main">
+    <a href="/" data-nav id="nav-new"><i class="ph-light ph-scan" aria-hidden="true"></i>Check a vendor</a>
+  </nav>
+  <button class="sound" type="button" id="sound" aria-pressed="true">
+    <i class="ph-light ph-speaker-simple-high" aria-hidden="true"></i><span>Sound on</span>
+  </button>
+</header>
+<main id="app" tabindex="-1"></main>
+<p class="sr" aria-live="polite" id="live"></p>
+<script src="/app.js" defer></script>
+</body>
+</html>
