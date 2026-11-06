@@ -1,0 +1,179 @@
+[
+ {
+  "vendor": "Central Bank of Iran",
+  "check": "ofac",
+  "verdict": "hit",
+  "reason": "exact name on an OFAC sanctions list",
+  "records": [
+   {
+    "name": "CENTRAL BANK OF IRAN",
+    "address": "PO Box 15875/7177, 144 Mirdamad Blvd",
+    "type": "Entity",
+    "programs": "IFSR; IRAN; IRGC; SDGT",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "CENTRAL BANK OF THE ISLAMIC REPUBLIC OF IRAN",
+    "address": "PO Box 15875/7177, 144 Mirdamad Blvd",
+    "type": "Entity",
+    "programs": "IFSR; IRAN; IRGC; SDGT",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "CENTRAL BANK OF RUSSIA",
+    "address": "Neglinnaya St 12",
+    "type": "Entity",
+    "programs": "RUSSIA-EO14024",
+    "list": "Non-SDN",
+    "score": "95"
+   },
+   {
+    "name": "CENTRAL BANK OF VENEZUELA",
+    "address": "Av. Urdaneta; Esquina Las Carmelitas; Edif. Banco Central",
+    "type": "Entity",
+    "programs": "VENEZUELA-EO13850",
+    "list": "SDN",
+    "score": "92"
+   },
+   {
+    "name": "CENTRAL BANK OF THE RUSSIAN FEDERATION",
+    "address": "Neglinnaya St 12",
+    "type": "Entity",
+    "programs": "RUSSIA-EO14024",
+    "list": "Non-SDN",
+    "score": "91"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.81,
+   "result_count_seen": 5,
+   "names_on_screen": [
+    "CENTRAL BANK OF IRAN",
+    "CENTRAL BANK OF THE ISLAMIC REPUBLIC OF IRAN",
+    "CENTRAL BANK OF RUSSIA",
+    "CENTRAL BANK OF VENEZUELA",
+    "CENTRAL BANK OF THE RUSSIAN FEDERATION"
+   ],
+   "exact_match_seen": true,
+   "note": "The first two results (Central Bank of Iran and Central Bank of the Islamic Republic of Iran) are the same Iranian central bank entity listed on the SDN list under the IFSR/IRAN/IRGC/SDGT programs and match the vendor, whereas the remaining three are unrelated central banks of Russia (Non-SDN) and Venezuela (SDN) that are not this vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Hezbolah",
+  "check": "ofac",
+  "verdict": "review",
+  "reason": "11 similar names, none exact; could be this vendor: ANSAR HEZBOLLAH",
+  "records": [
+   {
+    "name": "ANSAR HEZBOLLAH",
+    "address": "",
+    "type": "Entity",
+    "programs": "IRAN-HR",
+    "list": "SDN",
+    "score": "98"
+   },
+   {
+    "name": "ANSAR UL HEZBOLLAH",
+    "address": "",
+    "type": "Entity",
+    "programs": "IRAN-HR",
+    "list": "SDN",
+    "score": "98"
+   },
+   {
+    "name": "ANSAR-E HEZBOLLAH",
+    "address": "",
+    "type": "Entity",
+    "programs": "IRAN-HR",
+    "list": "SDN",
+    "score": "98"
+   },
+   {
+    "name": "ANSAR-I HEZBOLLAH",
+    "address": "",
+    "type": "Entity",
+    "programs": "IRAN-HR",
+    "list": "SDN",
+    "score": "98"
+   },
+   {
+    "name": "EXTERNAL SECURITY ORGANIZATION OF HEZBOLLAH",
+    "address": "",
+    "type": "Entity",
+    "programs": "FTO; IFSR; IRGC; SDGT",
+    "list": "SDN",
+    "score": "98"
+   },
+   {
+    "name": "HARAKAT HEZBOLLAH AL-NUJABA",
+    "address": "",
+    "type": "Entity",
+    "programs": "FTO; SDGT",
+    "list": "SDN",
+    "score": "98"
+   },
+   {
+    "name": "KATA'IB HEZBOLLAH",
+    "address": "",
+    "type": "Entity",
+    "programs": "FTO; IRAQ3; SDGT",
+    "list": "SDN",
+    "score": "98"
+   },
+   {
+    "name": "KHATA'IB HEZBOLLAH",
+    "address": "",
+    "type": "Entity",
+    "programs": "FTO; IRAQ3; SDGT",
+    "list": "SDN",
+    "score": "98"
+   },
+   {
+    "name": "LEBANESE HEZBOLLAH",
+    "address": "",
+    "type": "Entity",
+    "programs": "FTO; IFSR; IRGC; SDGT",
+    "list": "SDN",
+    "score": "98"
+   },
+   {
+    "name": "MOVEMENT OF THE NOBLE ONES HEZBOLLAH",
+    "address": "",
+    "type": "Entity",
+    "programs": "FTO; SDGT",
+    "list": "SDN",
+    "score": "98"
+   },
+   {
+    "name": "KHATTAB HEZBALLAH",
+    "address": "",
+    "type": "Entity",
+    "programs": "FTO; IRAQ3; SDGT",
+    "list": "SDN",
+    "score": "91"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 2.27,
+   "result_count_seen": 11,
+   "names_on_screen": [
+    "ANSAR HEZBOLLAH",
+    "ANSAR UL HEZBOLLAH",
+    "ANSAR-E HEZBOLLAH",
+    "ANSAR-I HEZBOLLAH",
+    "EXTERNAL SECURITY ORGANIZATION OF HEZBOLLAH",
+    "HARKAT HEZBOLLAH AL-NUJABA",
+    "KATA'IB HEZBOLLAH",
+    "KHATA'IB HEZBOLLAH"
+   ],
+   "exact_match_seen": false,
+   "note": "The misspelled vendor 'Hezbolah' (i.e., Hezbollah) returned 11 SDN-listed entities, all Type: Entity, whose names only contain 'Hezbollah'/'Hezbollah' as a component\u2014e.g., ANSAR HEZBOLLAH (IRAN-HR), EXTERNAL SECURITY ORGANIZATION OF HEZBOLLAH (FTO/IFSR/IRGC/SDGT), and KATA'IB HEZBOLLAH (FTO/IRAQ3/SDGT)\u2014so none is an exact match to the standalone vendor name; they are related Hezbollah-affiliated o",
+   "agrees": true
+  }
+ }
+]

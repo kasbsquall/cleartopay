@@ -47,4 +47,5 @@ def judge(reading: Reading, vendor: Vendor) -> CheckOutcome:
     exact = [r for r in reading.records if is_exact(r.name, vendor.legal_name)]
     if any(r.detail.get("status") == "Active" for r in exact):
         return CheckOutcome(Verdict.HIT, "active exclusion under this exact name", reading)
+    # SAM's keyword search also matches aliases and fields we cannot see, so any other result is for a person.
     return CheckOutcome(Verdict.REVIEW, f"{reading.result_count} exclusion records to compare", reading)

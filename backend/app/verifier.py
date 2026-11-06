@@ -10,6 +10,7 @@ from pathlib import Path
 from .inference import InferenceError, chat_json, image_part
 
 MODEL = os.environ.get("VERIFIER_MODEL", "qwen3.8-27b")
+NO_REASONING = {"chat_template_kwargs": {"enable_thinking": False}}
 
 SOURCES = {
     "ofac": "the OFAC Sanctions List Search results page",
@@ -35,7 +36,9 @@ async def verify(check: str, vendor_name: str, screenshot: Path, parsed_count: i
         image_part(screenshot),
     ]}]
     try:
-        answer = await chat_json(MODEL, messages)
+        # Reading a count off a screenshot needs no reasoning: with it on, qwen spent up to 7,400 tokens on
+        # an empty page and sometimes never answered; with it off it read 10, 27 and 0 rows right (6 Nov).
+        answer = await chat_json(MODEL, messages, options=NO_REASONING)
     except (InferenceError, OSError) as exc:
         return {"model": MODEL, "agrees": False, "error": str(exc)[:200]}
     data = answer["data"]

@@ -1,0 +1,1352 @@
+[
+ {
+  "vendor": "Ball Corporation",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "2 similar names at score 90+, none could be this vendor (closest: ABS CORPORATION)",
+  "records": [
+   {
+    "name": "ABS CORPORATION",
+    "address": "804 Jumeirah Bay Tower X3",
+    "type": "Entity",
+    "programs": "SDGT",
+    "list": "SDN",
+    "score": "91"
+   },
+   {
+    "name": "B K SALES CORPORATION",
+    "address": "D-1/GF-5, Virat Bhawan, Commercial Complex; Mukherjee Nagar",
+    "type": "Entity",
+    "programs": "IRAN-EO13846",
+    "list": "SDN",
+    "score": "91"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.87,
+   "result_count_seen": 2,
+   "names_on_screen": [
+    "ABS CORPORATION",
+    "B K SALES CORPORATION"
+   ],
+   "exact_match_seen": false,
+   "note": "The page returns two approximate (score 91) entity matches, neither of which is the vendor Ball Corporation: ABS CORPORATION is a Dubai-based entity (804 Jumeirah Bay Tower X3) listed on the SDN under the SDGT program, and B K SALES CORPORATION is an India-based entity (Mukherjee Nagar) listed on the SDN under IRAN-EO13846, so both are distinct companies and not the U.S. packaging vendor Ball Corp",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Ball Corporation",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.41,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The exclusions search returned 'No matches found' with no listed entities, so there are no similar or exact names to evaluate for Ball Corporation.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "DaVita Inc.",
+  "check": "ofac",
+  "verdict": "review",
+  "reason": "27 similar names, none exact; could be this vendor: DAVINA",
+  "records": [
+   {
+    "name": "BENGUIAT JIMENEZ, Alberto David",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059; SDGT",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "BOTELLO ORTIZ, Jesus David",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059; SDGT",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "CABELLO RONDON, Jose David",
+    "address": "",
+    "type": "Individual",
+    "programs": "VENEZUELA",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "CAMPBELL LICONA, David Elias",
+    "address": "",
+    "type": "Individual",
+    "programs": "TCO",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "CAMPBELL, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "TCO",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "CHAVARIN PRECIADO, David Alonso",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "CROSBY, David Paul",
+    "address": "",
+    "type": "Individual",
+    "programs": "GLOMAG",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DAVID, Andoson",
+    "address": "",
+    "type": "Individual",
+    "programs": "DPRK3",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DAVID, Yafi",
+    "address": "",
+    "type": "Individual",
+    "programs": "PAARSSR-EO13894",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DAVINA",
+    "address": "",
+    "type": "Vessel",
+    "programs": "IRAN-EO13846",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DE LIMA SALAS, David Eugenio",
+    "address": "Villas Martinique Casa 131 El Morro",
+    "type": "Individual",
+    "programs": "VENEZUELA",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DON DAVID",
+    "address": "",
+    "type": "Individual",
+    "programs": "TCO",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DURAN ALVAREZ, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "FERRARI, Sergio David",
+    "address": "Chivilcoy 3157 Piso 2 Depto D",
+    "type": "Individual",
+    "programs": "SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "GOMEZ ORTIZ, David",
+    "address": "c/o GESTORES DEL ECUADOR GESTORUM S.A.",
+    "type": "Individual",
+    "programs": "SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "GOTMAN, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "CYBER2",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "GUBERMAN, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "CYBER2",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "HERNANDEZ GRISALES, Jesus David",
+    "address": "",
+    "type": "Individual",
+    "programs": "SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "KYAGULANYI, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "DRCONGO",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "RUBIO CONDE, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "RUBIO GONZALEZ, David Nicolas",
+    "address": "",
+    "type": "Individual",
+    "programs": "VENEZUELA-EO13850",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "SWORD OF DAVID",
+    "address": "",
+    "type": "Entity",
+    "programs": "SDGT",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "THACKRAY, David Jonathan",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "THE RABBI MEIR DAVID KAHANE MEMORIAL FUND",
+    "address": "",
+    "type": "Entity",
+    "programs": "SDGT",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "TUITO, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "USUGA DAVID, Dairo Antonio",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059; SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "WEI, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "IFSR; NPWMD",
+    "list": "SDN",
+    "score": "90"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 2.13,
+   "result_count_seen": 27,
+   "names_on_screen": [
+    "BENGUAT JIMENEZ, Alberto David",
+    "BOTELLO ORTIZ, Jesus David",
+    "CABELLO RONDON, Jose David",
+    "CAMPBELL LICONA, David Elias",
+    "CAMPBELL, David"
+   ],
+   "exact_match_seen": false,
+   "note": "None of the visible results is the company DaVita Inc.; all listed entries are individuals (Type: Individual) such as Alberto David BENGUAT JIMENEZ and Jesus David BOTELLO ORTIZ, sanctioned under programs like SDGT/ILLICIT-DRUGS-EO14059 and TCO/VENEZUELA, so the 27 hits appear to be fuzzy string matches on name components rather than the vendor entity.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "DaVita Inc.",
+  "check": "sam",
+  "verdict": "review",
+  "reason": "the verifier read the screenshot differently (model spent its token budget reasoning and returned no answer)",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "agrees": false,
+   "error": "model spent its token budget reasoning and returned no answer"
+  }
+ },
+ {
+  "vendor": "Molson Coors Beverage Company",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.39,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page shows 'Lookup Results: 0 Found' and the message 'Your search has not returned any results,' so no entity names (similar or exact) are listed for the payments analyst to review.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Molson Coors Beverage Company",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 8.89,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search for 'Molson Coors Beverage Company' displays 'No matches found' with no entity names listed, so there is no exclusion record or similarly named party to evaluate for this vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Crocs, Inc.",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "3 similar names at score 90+, none could be this vendor (closest: CROCUS NANOELECTRONICS)",
+  "records": [
+   {
+    "name": "CROCUS NANOELECTRONICS",
+    "address": "42k5 Volgogradsky Ave",
+    "type": "Entity",
+    "programs": "RUSSIA-EO14024",
+    "list": "SDN",
+    "score": "97"
+   },
+   {
+    "name": "CROSS OCEAN",
+    "address": "",
+    "type": "Vessel",
+    "programs": "IRAN-EO13846",
+    "list": "SDN",
+    "score": "91"
+   },
+   {
+    "name": "CRIOS SHIPPING L.L.C",
+    "address": "Office 1104, Maze Tower, Sheikh Zayed Road",
+    "type": "Entity",
+    "programs": "IRAN-EO13902",
+    "list": "SDN",
+    "score": "90"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.87,
+   "result_count_seen": 3,
+   "names_on_screen": [
+    "CROCUS NANOELECTRONICS",
+    "CROSS OCEAN",
+    "CRIOS SHIPPING L.L.C"
+   ],
+   "exact_match_seen": false,
+   "note": "None of the three returned records is the footwear company Crocs, Inc.: CROCUS NANOELECTRONICS is a Russia-related SDN entity (score 97), CROSS OCEAN is an Iran-related SDN vessel (score 91), and CRIOS SHIPPING L.L.C is an Iran-related SDN entity (score 90), all of which are only approximate string matches to the search term and not the vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Crocs, Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 5.43,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search for \"Crocs, Inc.\" displays a \"No matches found\" banner with no listed entities or similar names, so there is nothing on screen to compare against the vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Ovintiv Inc.",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.14,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The OFAC Sanctions List Search for 'Ovintiv Inc.' returned 0 results, with the page displaying 'Your search has not returned any results,' so no sanctioned entities or similar names are listed for review.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Ovintiv Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.21,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search for \"Ovintiv Inc.\" returned \"No matches found,\" meaning no excluded entities (similar or otherwise) are listed on this page.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Microsoft Corporation",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.37,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page shows 'Lookup Results: 0 Found' and the message 'Your search has not returned any results,' so no entity names (similar or exact) are listed for the vendor Microsoft Corporation.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Microsoft Corporation",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.0,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search returned 'No matches found' with no result count or entity names listed, indicating no exclusion record matches the vendor 'Microsoft Corporation'.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Vail Resorts, Inc.",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.67,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page shows \"Lookup Results: 0 Found\" and the message \"Your search has not returned any results,\" so no entity names or similar matches are listed for Vail Resorts, Inc.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Vail Resorts, Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.04,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page shows 'No matches found' for the search, with no result count and no listed entity names or similar names to evaluate.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Newmont Corporation",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.66,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The OFAC Sanctions List Search for 'Newmont Corporation' returned 0 results, so the page lists no entities and there are no similar names to compare against the vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Newmont Corporation",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.19,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search for 'Newmont Corporation' returned 'No matches found,' meaning the vendor is not listed in the exclusions database and no similar or exact names appear on the page.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Arrow Electronics, Inc.",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.6,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The OFAC Sanctions List Search for 'Arrow Electronics, Inc.' returned '0 Found' with the message 'Your search has not returned any results,' so no sanctioned entities or similar names are displayed to compare.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Arrow Electronics, Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.15,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page displays 'No matches found' with the message 'We couldn't find a match for your search criteria,' indicating no exclusions or similar names were returned for the vendor search.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "The Western Union Company",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.21,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The OFAC Sanctions List Search for 'The Western Union Company' returned 0 results, so no sanctioned entities (exact or similar) are listed to compare against this vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "The Western Union Company",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.27,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search for 'The Western Union Company' returned 'No matches found,' meaning no excluded entities (similar or otherwise) are listed for this vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Advanced Energy Industries, Inc.",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.6,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The OFAC Sanctions List Search for 'Advanced Energy Industries, Inc.' returned 0 results ('Your search has not returned any results'), so no entity\u2014sanctioned or otherwise\u2014appears on the screen to compare against the vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Advanced Energy Industries, Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.96,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search returned 'No matches found,' meaning no excluded entity (individual or company) matches the vendor name, so there is no exclusion record to flag for payments.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Frontier Airlines, Inc.",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.69,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The OFAC Sanctions List Search for \"Frontier Airlines, Inc.\" returned 0 results, with the page displaying \"Lookup Results: 0 Found\" and the message \"Your search has not returned any results,\" so no sanctioned or similar entity names are present to compare against the vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Frontier Airlines, Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 0.88,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search for \"Frontier Airlines, Inc.\" returned no matches, so the page displays \"No matches found\" with no listed entities or similar names to review.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Liberty Media Corporation",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.71,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The OFAC Sanctions List Search for \"Liberty Media Corporation\" returned 0 results (\"Lookup Results: 0 Found\" and \"Your search has not returned any results\"), so there are no listed entities, similar names, or potential matches to evaluate for this vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Liberty Media Corporation",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.03,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search for \"Liberty Media Corporation\" returned \"No matches found,\" meaning no excluded entities matched the search criteria and no similar names are listed to review.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Chipotle Mexican Grill, Inc.",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.57,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page shows \"Lookup Results: 0 Found\" and the message \"Your search has not returned any results,\" so no entity names or similar matches are listed for the vendor Chipotle Mexican Grill, Inc.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Chipotle Mexican Grill, Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.46,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search returned 'No matches found,' so there are no exclusion records for Chipotle Mexican Grill, Inc. or any similarly named entity to review.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Palantir Technologies Inc.",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "2 similar names at score 90+, none could be this vendor (closest: JOINT STOCK COMPANY MOSKOW EXPERIMENTAL MACHINE-BUILDING PLANT - COMPOSITE TECHNOLOGIES)",
+  "records": [
+   {
+    "name": "JOINT STOCK COMPANY MOSKOW EXPERIMENTAL MACHINE-BUILDING PLANT - COMPOSITE TECHNOLOGIES",
+    "address": "d. 9 Pr. 1-I Magistralny",
+    "type": "Entity",
+    "programs": "UKRAINE-EO13662",
+    "list": "Non-SDN",
+    "score": "92"
+   },
+   {
+    "name": "MOSCOW MECHANICAL EXPERIMENTAL PLANT - COMPOSITE TECHNOLOGIES OPEN JOINT STOCK COMPANY",
+    "address": "d. 9 Pr. 1-I Magistralny",
+    "type": "Entity",
+    "programs": "UKRAINE-EO13662",
+    "list": "Non-SDN",
+    "score": "92"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 2.34,
+   "result_count_seen": 2,
+   "names_on_screen": [
+    "JOINT STOCK COMPANY MOSCOW EXPERIMENTAL MACHINE-BUILDING PLANT - COMPOSITE TECHNOLOGIES",
+    "MOSCOW MECHANICAL EXPERIMENTAL PLANT - COMPOSITE TECHNOLOGIES OPEN JOINT STOCK COMPANY"
+   ],
+   "exact_match_seen": false,
+   "note": "The two returned hits are Russian (Moscow-addressed) entities under the UKRAINE-EO13662 program on the Non-SDN list (score 92) and are not the U.S. vendor Palantir Technologies Inc.; they only share the generic word 'TECHNOLOGIES' with the search term and have no relation to the Palantir company.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Palantir Technologies Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 2.82,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page shows a 'No matches found' empty state with no numeric result count and no listed entity names, so no exclusions or similar names for Palantir Technologies Inc. are displayed.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Woodward, Inc.",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "1 similar names at score 90+, none could be this vendor (closest: WOODFORD ENTERPRISES LIMITED SASU)",
+  "records": [
+   {
+    "name": "WOODFORD ENTERPRISES LIMITED SASU",
+    "address": "8eme etage, Immeuble 1113; No. 110 Boulevard Du 30 Juin; Municipality of Gombe",
+    "type": "Entity",
+    "programs": "GLOMAG",
+    "list": "SDN",
+    "score": "90"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.73,
+   "result_count_seen": 1,
+   "names_on_screen": [
+    "WOODFORD ENTERPRISES LIMITED SASU"
+   ],
+   "exact_match_seen": false,
+   "note": "The single hit, WOODFORD ENTERPRISES LIMITED SASU, is a separate company (Entity type) on the SDN List under the GLOMAG (Global Magnitsky) program with an address in Gombe, and is not the vendor Woodward, Inc.; it is only an approximate string match (score 90) on the similar \"Wood-\" prefix, so it should not be treated as the same entity.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Woodward, Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.43,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page displays 'No matches found' with no listed entities, indicating that no exclusion or entity record matched the search criteria for Woodward, Inc.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Pilgrim's Pride Corporation",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.97,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The OFAC Sanctions List Search returned 0 results for 'Pilgrim's Pride Corporation' (minimum name score 90, all programs/lists), so the page displays 'Your search has not returned any results' and there are no sanctioned or similar names to compare against.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Pilgrim's Pride Corporation",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 2.27,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page displays a 'No matches found' message with no entity names listed, indicating that no exclusions record matching the search criteria was returned for Pilgrim's Pride Corporation.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Gates Corporation",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "1 similar names at score 90+, none could be this vendor (closest: ABS CORPORATION)",
+  "records": [
+   {
+    "name": "ABS CORPORATION",
+    "address": "804 Jumeirah Bay Tower X3",
+    "type": "Entity",
+    "programs": "SDGT",
+    "list": "SDN",
+    "score": "91"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.97,
+   "result_count_seen": 1,
+   "names_on_screen": [
+    "ABS CORPORATION"
+   ],
+   "exact_match_seen": false,
+   "note": "The only result, ABS CORPORATION (an SDN-listed entity under the SDGT program, address 804 Jumeirah Bay Tower X3), is not the vendor Gates Corporation\u2014the names are entirely different, so this is an unrelated approximate match returned by the fuzzy search rather than a true hit.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Gates Corporation",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.64,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search for \"Gates Corporation\" returned \"No matches found,\" so no excluded entities, similar names, or sanctions listings appear on the page for this vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Ibotta, Inc.",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.24,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The OFAC Sanctions List Search for 'Ibotta, Inc.' returned 0 results, with the page explicitly stating 'Your search has not returned any results,' so no entity names or similar matches are displayed to evaluate.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Ibotta, Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.34,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page displays \"No matches found,\" so no excluded entities or similarly named parties are listed for the search of Ibotta, Inc.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Qods Aviation Industry",
+  "check": "ofac",
+  "verdict": "review",
+  "reason": "1 similar names, none exact; could be this vendor: QODS AVIATION INDUSTRIES",
+  "records": [
+   {
+    "name": "QODS AVIATION INDUSTRIES",
+    "address": "P.O. Box 15875-1834; Km 5 Karaj Special Road",
+    "type": "Entity",
+    "programs": "IFSR; IRAN-CON-ARMS-EO; NPWMD; RUSSIA-EO14024",
+    "list": "SDN",
+    "score": "98"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 4.25,
+   "result_count_seen": 1,
+   "names_on_screen": [
+    "QODS AVIATION INDUSTRIES"
+   ],
+   "exact_match_seen": false,
+   "note": "The single result, QODS AVIATION INDUSTRIES, is an entity (company) on the SDN list with programs IFSR, IRAN-CON-ARMS-EO, NPWMD and RUSSIA-EO14024 and a Karaj, Iran address, and it is a near-exact match to the vendor 'Qods Aviation Industry' differing only by the plural 's' (Industries vs Industry), so it is very likely the same vendor but not an exact name match under the case/punctuation/legal-s",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Qods Aviation Industry",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.23,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page displays 'No matches found' with the message 'We couldn't find a match for your search criteria,' so no entity names or similar-name candidates are listed to evaluate for the vendor Qods Aviation Industry.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Bank Markazi",
+  "check": "ofac",
+  "verdict": "review",
+  "reason": "4 similar names, none exact; could be this vendor: BANK MARKAZI IRAN",
+  "records": [
+   {
+    "name": "BANK MARKAZI IRAN",
+    "address": "PO Box 15875/7177, 144 Mirdamad Blvd",
+    "type": "Entity",
+    "programs": "IFSR; IRAN; IRGC; SDGT",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "BANK MARKAZI JOMHOURI ISLAMI IRAN",
+    "address": "PO Box 15875/7177, 144 Mirdamad Blvd",
+    "type": "Entity",
+    "programs": "IFSR; IRAN; IRGC; SDGT",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "BANK MASKAN",
+    "address": "PO Box 11365/5699, No 247 3rd Floor Fedowsi Ave, Cross Sarhang Sakhaei St",
+    "type": "Entity",
+    "programs": "IRAN; IRAN-EO13902",
+    "list": "SDN",
+    "score": "92"
+   },
+   {
+    "name": "BANK MELLI IRAN ZAO",
+    "address": "9/1 ul Mashkova",
+    "type": "Entity",
+    "programs": "IFSR; RUSSIA-EO14024; SDGT",
+    "list": "SDN",
+    "score": "91"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 4.21,
+   "result_count_seen": 4,
+   "names_on_screen": [
+    "BANK MARKAZI IRAN",
+    "BANK MARKAZI JOMHOURI ISLAMI IRAN",
+    "BANK MASKAN",
+    "BANK MELLI IRAN ZAO"
+   ],
+   "exact_match_seen": false,
+   "note": "All four hits are SDN-listed entities (companies, not individuals); 'BANK MARKAZI IRAN' and its alternate name 'BANK MARKAZI JOMHOURI ISLAMI IRAN' (Iran, programs IFSR/IRAN/IRGC/SDGT) are the same institution as the vendor Bank Markazi but carry the extra word 'IRAN' so they are not a strict name match, whereas 'BANK MASKAN' (Iran, IRAN/IRAN-EO13902) and 'BANK MELLI IRAN ZAO' (Russia address, IFSR",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Bank Markazi",
+  "check": "sam",
+  "verdict": "review",
+  "reason": "2 exclusion records; could be this vendor: BANK MARKAZI IRAN",
+  "records": [
+   {
+    "name": "BANK MARKAZI IRAN",
+    "status": "Active",
+    "uei": "NUE7KNXF5CL8"
+   },
+   {
+    "name": "BANK MARKAZI JOMHOURI ISLAMI IRAN",
+    "status": "Active",
+    "uei": "HPKHHWBNR9X3"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 8.35,
+   "result_count_seen": 2,
+   "names_on_screen": [
+    "BANK MARKAZI IRAN",
+    "BANK MARKAZI JOMHOURI ISLAMI IRAN"
+   ],
+   "exact_match_seen": true,
+   "note": "Both listed names refer to the same Iranian central bank (a company, Iran) that is the searched vendor Bank Markazi\u2014the first is the short name with the country appended and the second is its full formal name\u2014and both are Active exclusions under the Special Entity Designation classification with an indefinite termination date.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Aero Caribbean Airlines",
+  "check": "ofac",
+  "verdict": "review",
+  "reason": "2 similar names, none exact; could be this vendor: AEROCARIBBEAN AIRLINES",
+  "records": [
+   {
+    "name": "AEROCARIBBEAN AIRLINES",
+    "address": "",
+    "type": "Entity",
+    "programs": "CUBA",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "AERO-CARIBBEAN",
+    "address": "",
+    "type": "Entity",
+    "programs": "CUBA",
+    "list": "SDN",
+    "score": "91"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 4.2,
+   "result_count_seen": 2,
+   "names_on_screen": [
+    "AEROCARIBBEAN AIRLINES",
+    "AERO-CARIBBEAN"
+   ],
+   "exact_match_seen": true,
+   "note": "The top result AEROCARIBBEAN AIRLINES (Entity, CUBA program, SDN list, score 100) is the same Cuban airline as the vendor 'Aero Caribbean Airlines' (only a spacing difference), whereas the second result AERO-CARIBBEAN (Entity, CUBA, SDN, score 91) is a similar but shorter name missing 'Airlines' and is therefore a near-match rather than the exact vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Aero Caribbean Airlines",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.2,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page displays 'No matches found' for the search, indicating no excluded entities match the vendor name and no similar names are listed to compare.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Rosneft Trading",
+  "check": "ofac",
+  "verdict": "review",
+  "reason": "3 similar names, none exact; could be this vendor: ROSNEFT TRADING S.A.",
+  "records": [
+   {
+    "name": "ROSNEFT TRADING S.A.",
+    "address": "Rue Place du Lac 2, 1204",
+    "type": "Entity",
+    "programs": "UKRAINE-EO13662; VENEZUELA-EO13850",
+    "list": "SDN; Non-SDN",
+    "score": "100"
+   },
+   {
+    "name": "ROSNEFT",
+    "address": "26/1 Sofiyskaya Embankment",
+    "type": "Entity",
+    "programs": "RUSSIA-EO14024; UKRAINE-EO13662",
+    "list": "SDN; Non-SDN",
+    "score": "92"
+   },
+   {
+    "name": "ROSNEFT TRADE LIMITED",
+    "address": "Elenion Building 5 Themistokli Dervi; 2nd floor",
+    "type": "Entity",
+    "programs": "UKRAINE-EO13662",
+    "list": "Non-SDN",
+    "score": "91"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.93,
+   "result_count_seen": 3,
+   "names_on_screen": [
+    "ROSNEFT TRADING S.A.",
+    "ROSNEFT",
+    "ROSNEFT TRADE LIMITED"
+   ],
+   "exact_match_seen": true,
+   "note": "ROSNEFT TRADING S.A. is an exact match to the vendor (an entity on both SDN and Non-SDN under UKRAINE-EO13662, VENEZUELA-EO13850, and RUSSIA-EO14024, score 100), ROSNEFT is the parent company (entity, SDN/Non-SDN, score 92), and ROSNEFT TRADE LIMITED is a similarly named but distinct entity (Non-SDN only, score 91).",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Rosneft Trading",
+  "check": "sam",
+  "verdict": "review",
+  "reason": "2 exclusion records; could be this vendor: ROSNEFT TRADING S.A.",
+  "records": [
+   {
+    "name": "ROSNEFT TRADING S.A.",
+    "status": "Active",
+    "uei": "N98ZRTJMY5A5"
+   },
+   {
+    "name": "ROSNEFT TRADING S.A.",
+    "status": "Active",
+    "uei": "FD7YHXK7DF27"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 2.18,
+   "result_count_seen": 2,
+   "names_on_screen": [
+    "ROSNEFT TRADING S.A.",
+    "ROSNEFT TRADING S.A."
+   ],
+   "exact_match_seen": true,
+   "note": "Both listed entries are the same company, ROSNEFT TRADING S.A., a Swiss-registered (Geneva, CHE) corporate entity carrying an active Exclusion under Special Entity Designation effective Jul 30, 2015 with an indefinite termination date, so each matches the searched vendor name rather than being a similarly named individual or unrelated firm.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Bank Saderat",
+  "check": "ofac",
+  "verdict": "hit",
+  "reason": "exact name on an OFAC sanctions list",
+  "records": [
+   {
+    "name": "BANK SADERAT IRAN",
+    "address": "PO Box 15745-631, Bank Saderat Tower, 43 Somayeh Avenue",
+    "type": "Entity",
+    "programs": "IFSR; IRAN; SDGT",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "BANK SADERAT PLC",
+    "address": "5 Lothbury",
+    "type": "Entity",
+    "programs": "IFSR; IRAN; SDGT",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "BANK TOSEE SADERAT IRAN",
+    "address": "No. 26, Tosee Tower (Export Development Building), Corner of 15th Street, Ahmad Qasir Avenue, Argentina Square",
+    "type": "Entity",
+    "programs": "IFSR; IRAN; SDGT",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "BANK TOSEH SADERAT IRAN",
+    "address": "No. 26, Tosee Tower (Export Development Building), Corner of 15th Street, Ahmad Qasir Avenue, Argentina Square",
+    "type": "Entity",
+    "programs": "IFSR; IRAN; SDGT",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "BANK TOSEYEH SADERAT IRAN",
+    "address": "No. 26, Tosee Tower (Export Development Building), Corner of 15th Street, Ahmad Qasir Avenue, Argentina Square",
+    "type": "Entity",
+    "programs": "IFSR; IRAN; SDGT",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "BANK TOWSEEH SADERAT IRAN",
+    "address": "No. 26, Tosee Tower (Export Development Building), Corner of 15th Street, Ahmad Qasir Avenue, Argentina Square",
+    "type": "Entity",
+    "programs": "IFSR; IRAN; SDGT",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "BANK TEJARAT",
+    "address": "152 Taleghani Avenue",
+    "type": "Entity",
+    "programs": "IFSR; IRAN; NPWMD; SDGT",
+    "list": "SDN",
+    "score": "91"
+   },
+   {
+    "name": "BANK SARMAYEH",
+    "address": "Sepahod Gharani No. 24; Corner of Arak St.",
+    "type": "Entity",
+    "programs": "IRAN; IRAN-EO13902",
+    "list": "SDN",
+    "score": "90"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 2.81,
+   "result_count_seen": 8,
+   "names_on_screen": [
+    "BANK SADERAT IRAN",
+    "BANK SADERAT PLC",
+    "BANK TOSEE SADERAT IRAN",
+    "BANK TOSEH SADERAT IRAN",
+    "BANK TOSEFEL SADERAT IRAN"
+   ],
+   "exact_match_seen": true,
+   "note": "The page reports 8 results, and among the visible rows BANK SADERAT IRAN and BANK SADERAT PLC (an Iranian bank, SDN-listed under IFSR/IRAN/SDGT) match the vendor once the legal suffix 'PLC' is ignored, while BANK TOSEE SADERAT IRAN, BANK TOSEH SADERAT IRAN, and BANK TOSEFEL SADERAT IRAN are distinct, similarly-named Iranian entities and not this vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Bank Saderat",
+  "check": "sam",
+  "verdict": "review",
+  "reason": "2 exclusion records; could be this vendor: BANK SADERAT IRAN",
+  "records": [
+   {
+    "name": "BANK SADERAT IRAN",
+    "status": "Active",
+    "uei": "V4Z5EVUNEX55"
+   },
+   {
+    "name": "BANK SADERAT IRAN",
+    "status": "Active",
+    "uei": "V4Z5EVUNEX55"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 4.6,
+   "result_count_seen": 2,
+   "names_on_screen": [
+    "BANK SADERAT IRAN",
+    "BANK SADERAT IRAN"
+   ],
+   "exact_match_seen": false,
+   "note": "The page shows two identical Active exclusion entries for \"BANK SADERAT IRAN\" (Classification: Special Entity Designation, Termination Date: Indefinite, Physical Address: PO Box 1269, Muscat, 112 OMN), which is the same Iranian bank as the vendor \"Bank Saderat\" but with the added country word \"IRAN\" (not a legal suffix), so it is not a strict exact-name match under the stated rules.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Banco Nacional Cuba",
+  "check": "ofac",
+  "verdict": "review",
+  "reason": "3 similar names, none exact; could be this vendor: BANCO NACIONAL DE CUBA",
+  "records": [
+   {
+    "name": "BANCO NACIONAL DE CUBA",
+    "address": "Zweierstrasse 35",
+    "type": "Entity",
+    "programs": "CUBA",
+    "list": "SDN",
+    "score": "100"
+   },
+   {
+    "name": "BANCO NACIONAL",
+    "address": "2 Cuadras Aloeste y 3 Cuadras Alnorte",
+    "type": "Entity",
+    "programs": "NICARAGUA",
+    "list": "SDN",
+    "score": "96"
+   },
+   {
+    "name": "BANCO NATIONAL",
+    "address": "2 Cuadras Aloeste y 3 Cuadras Alnorte",
+    "type": "Entity",
+    "programs": "NICARAGUA",
+    "list": "SDN",
+    "score": "94"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 5.15,
+   "result_count_seen": 3,
+   "names_on_screen": [
+    "BANCO NACIONAL DE CUBA",
+    "BANCO NACIONAL",
+    "BANCO NACIONAL"
+   ],
+   "exact_match_seen": false,
+   "note": "The top result BANCO NACIONAL DE CUBA (Entity, CUBA program, SDN list, score 100) is the Cuban bank the vendor name points to but its listed name contains the preposition \"de\" that the vendor string omits, so it is not an exact match under the allowed normalizations, whereas the two BANCO NACIONAL entries (Entity, NICARAGUA program, SDN list, scores 96 and 94) are unrelated Nicaraguan banks and no",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Banco Nacional Cuba",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 3.12,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The SAM.gov exclusions search for \"Banco Nacional Cuba\" returned \"No matches found,\" so the page lists no excluded entities and there are no similar names to compare against the vendor.",
+   "agrees": true
+  }
+ }
+]

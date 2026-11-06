@@ -1,0 +1,200 @@
+[
+ {
+  "seconds": 1.6,
+  "reasoning": 0,
+  "finish": "stop",
+  "count": 10,
+  "exact": true,
+  "check": "colorado",
+  "vendor": "Ovintiv Inc.",
+  "setting": "sin razonar",
+  "true_count": 10
+ },
+ {
+  "seconds": 0.9,
+  "reasoning": 0,
+  "finish": "stop",
+  "count": 10,
+  "exact": true,
+  "check": "colorado",
+  "vendor": "Ovintiv Inc.",
+  "setting": "sin razonar",
+  "true_count": 10
+ },
+ {
+  "seconds": 1.6,
+  "reasoning": 362,
+  "finish": "stop",
+  "count": 10,
+  "exact": true,
+  "check": "colorado",
+  "vendor": "Ovintiv Inc.",
+  "setting": "low",
+  "true_count": 10
+ },
+ {
+  "seconds": 1.6,
+  "reasoning": 362,
+  "finish": "stop",
+  "count": 10,
+  "exact": true,
+  "check": "colorado",
+  "vendor": "Ovintiv Inc.",
+  "setting": "low",
+  "true_count": 10
+ },
+ {
+  "seconds": 3.7,
+  "reasoning": 1392,
+  "finish": "stop",
+  "count": 10,
+  "exact": true,
+  "check": "colorado",
+  "vendor": "Ovintiv Inc.",
+  "setting": "normal 12k",
+  "true_count": 10
+ },
+ {
+  "seconds": 3.6,
+  "reasoning": 1392,
+  "finish": "stop",
+  "count": 10,
+  "exact": true,
+  "check": "colorado",
+  "vendor": "Ovintiv Inc.",
+  "setting": "normal 12k",
+  "true_count": 10
+ },
+ {
+  "seconds": 1.0,
+  "reasoning": 0,
+  "finish": "stop",
+  "count": 27,
+  "exact": false,
+  "check": "ofac",
+  "vendor": "DaVita Inc.",
+  "setting": "sin razonar",
+  "true_count": 27
+ },
+ {
+  "seconds": 1.3,
+  "reasoning": 0,
+  "finish": "stop",
+  "count": 27,
+  "exact": false,
+  "check": "ofac",
+  "vendor": "DaVita Inc.",
+  "setting": "sin razonar",
+  "true_count": 27
+ },
+ {
+  "seconds": 1.8,
+  "reasoning": 382,
+  "finish": "stop",
+  "count": 27,
+  "exact": false,
+  "check": "ofac",
+  "vendor": "DaVita Inc.",
+  "setting": "low",
+  "true_count": 27
+ },
+ {
+  "seconds": 1.6,
+  "reasoning": 382,
+  "finish": "stop",
+  "count": 27,
+  "exact": false,
+  "check": "ofac",
+  "vendor": "DaVita Inc.",
+  "setting": "low",
+  "true_count": 27
+ },
+ {
+  "seconds": 1.8,
+  "reasoning": 501,
+  "finish": "stop",
+  "count": 27,
+  "exact": false,
+  "check": "ofac",
+  "vendor": "DaVita Inc.",
+  "setting": "normal 12k",
+  "true_count": 27
+ },
+ {
+  "seconds": 1.8,
+  "reasoning": 501,
+  "finish": "stop",
+  "count": 27,
+  "exact": false,
+  "check": "ofac",
+  "vendor": "DaVita Inc.",
+  "setting": "normal 12k",
+  "true_count": 27
+ },
+ {
+  "seconds": 0.7,
+  "reasoning": 0,
+  "finish": "stop",
+  "count": 0,
+  "exact": false,
+  "check": "sam",
+  "vendor": "DaVita Inc.",
+  "setting": "sin razonar",
+  "true_count": 0
+ },
+ {
+  "seconds": 0.7,
+  "reasoning": 0,
+  "finish": "stop",
+  "count": 0,
+  "exact": false,
+  "check": "sam",
+  "vendor": "DaVita Inc.",
+  "setting": "sin razonar",
+  "true_count": 0
+ },
+ {
+  "seconds": 1.1,
+  "reasoning": 191,
+  "finish": "stop",
+  "count": null,
+  "exact": false,
+  "check": "sam",
+  "vendor": "DaVita Inc.",
+  "setting": "low",
+  "true_count": 0
+ },
+ {
+  "seconds": 1.1,
+  "reasoning": 191,
+  "finish": "stop",
+  "count": null,
+  "exact": false,
+  "check": "sam",
+  "vendor": "DaVita Inc.",
+  "setting": "low",
+  "true_count": 0
+ },
+ {
+  "seconds": 16.8,
+  "reasoning": 7424,
+  "finish": "stop",
+  "count": null,
+  "exact": false,
+  "check": "sam",
+  "vendor": "DaVita Inc.",
+  "setting": "normal 12k",
+  "true_count": 0
+ },
+ {
+  "seconds": 17.0,
+  "reasoning": 7424,
+  "finish": "stop",
+  "count": null,
+  "exact": false,
+  "check": "sam",
+  "vendor": "DaVita Inc.",
+  "setting": "normal 12k",
+  "true_count": 0
+ }
+]

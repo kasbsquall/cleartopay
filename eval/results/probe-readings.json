@@ -1,0 +1,398 @@
+[
+ {
+  "vendor": "Ball Corporation",
+  "check": "ofac",
+  "verdict": "review",
+  "reason": "2 similar names, none exact",
+  "records": [
+   {
+    "name": "ABS CORPORATION",
+    "address": "804 Jumeirah Bay Tower X3",
+    "type": "Entity",
+    "programs": "SDGT",
+    "list": "SDN",
+    "score": "91"
+   },
+   {
+    "name": "B K SALES CORPORATION",
+    "address": "D-1/GF-5, Virat Bhawan, Commercial Complex; Mukherjee Nagar",
+    "type": "Entity",
+    "programs": "IRAN-EO13846",
+    "list": "SDN",
+    "score": "91"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 2.21,
+   "result_count_seen": 2,
+   "names_on_screen": [
+    "ABS CORPORATION",
+    "B K SALES CORPORATION"
+   ],
+   "exact_match_seen": false,
+   "note": "The page returns two approximate (score 91) entity matches, neither of which is the vendor Ball Corporation: ABS CORPORATION is a Dubai-based entity (804 Jumeirah Bay Tower X3) listed on the SDN under the SDGT program, and B K SALES CORPORATION is an India-based entity (Mukherjee Nagar) listed on the SDN under IRAN-EO13846, so both are distinct companies and not the U.S. packaging vendor Ball Corp",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Ball Corporation",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.26,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The exclusions search returned 'No matches found' with no listed entities, so there are no similar or exact names to evaluate for Ball Corporation.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "DaVita Inc.",
+  "check": "ofac",
+  "verdict": "review",
+  "reason": "27 similar names, none exact",
+  "records": [
+   {
+    "name": "BENGUIAT JIMENEZ, Alberto David",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059; SDGT",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "BOTELLO ORTIZ, Jesus David",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059; SDGT",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "CABELLO RONDON, Jose David",
+    "address": "",
+    "type": "Individual",
+    "programs": "VENEZUELA",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "CAMPBELL LICONA, David Elias",
+    "address": "",
+    "type": "Individual",
+    "programs": "TCO",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "CAMPBELL, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "TCO",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "CHAVARIN PRECIADO, David Alonso",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "CROSBY, David Paul",
+    "address": "",
+    "type": "Individual",
+    "programs": "GLOMAG",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DAVID, Andoson",
+    "address": "",
+    "type": "Individual",
+    "programs": "DPRK3",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DAVID, Yafi",
+    "address": "",
+    "type": "Individual",
+    "programs": "PAARSSR-EO13894",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DAVINA",
+    "address": "",
+    "type": "Vessel",
+    "programs": "IRAN-EO13846",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DE LIMA SALAS, David Eugenio",
+    "address": "Villas Martinique Casa 131 El Morro",
+    "type": "Individual",
+    "programs": "VENEZUELA",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DON DAVID",
+    "address": "",
+    "type": "Individual",
+    "programs": "TCO",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "DURAN ALVAREZ, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "FERRARI, Sergio David",
+    "address": "Chivilcoy 3157 Piso 2 Depto D",
+    "type": "Individual",
+    "programs": "SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "GOMEZ ORTIZ, David",
+    "address": "c/o GESTORES DEL ECUADOR GESTORUM S.A.",
+    "type": "Individual",
+    "programs": "SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "GOTMAN, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "CYBER2",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "GUBERMAN, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "CYBER2",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "HERNANDEZ GRISALES, Jesus David",
+    "address": "",
+    "type": "Individual",
+    "programs": "SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "KYAGULANYI, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "DRCONGO",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "RUBIO CONDE, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "RUBIO GONZALEZ, David Nicolas",
+    "address": "",
+    "type": "Individual",
+    "programs": "VENEZUELA-EO13850",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "SWORD OF DAVID",
+    "address": "",
+    "type": "Entity",
+    "programs": "SDGT",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "THACKRAY, David Jonathan",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "THE RABBI MEIR DAVID KAHANE MEMORIAL FUND",
+    "address": "",
+    "type": "Entity",
+    "programs": "SDGT",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "TUITO, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "USUGA DAVID, Dairo Antonio",
+    "address": "",
+    "type": "Individual",
+    "programs": "ILLICIT-DRUGS-EO14059; SDNTK",
+    "list": "SDN",
+    "score": "90"
+   },
+   {
+    "name": "WEI, David",
+    "address": "",
+    "type": "Individual",
+    "programs": "IFSR; NPWMD",
+    "list": "SDN",
+    "score": "90"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 2.15,
+   "result_count_seen": 27,
+   "names_on_screen": [
+    "BENGUAT JIMENEZ, Alberto David",
+    "BOTELLO ORTIZ, Jesus David",
+    "CABELLO RONDON, Jose David",
+    "CAMPBELL LICONA, David Elias",
+    "CAMPBELL, David"
+   ],
+   "exact_match_seen": false,
+   "note": "None of the visible results is the company DaVita Inc.; all listed entries are individuals (Type: Individual) such as Alberto David BENGUAT JIMENEZ and Jesus David BOTELLO ORTIZ, sanctioned under programs like SDGT/ILLICIT-DRUGS-EO14059 and TCO/VENEZUELA, so the 27 hits appear to be fuzzy string matches on name components rather than the vendor entity.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "DaVita Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.26,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The Exclusions search for DaVita Inc. returned 'No matches found,' so the page lists no entity names\u2014exact or similar\u2014for a payments analyst to compare.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Molson Coors Beverage Company",
+  "check": "ofac",
+  "verdict": "clear",
+  "reason": "0 matches at a minimum score of 90",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.29,
+   "result_count_seen": 0,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page shows 'Lookup Results: 0 Found' and the message 'Your search has not returned any results,' so no entity names (similar or exact) are listed for the payments analyst to review.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Molson Coors Beverage Company",
+  "check": "sam",
+  "verdict": "review",
+  "reason": "the verifier read the screenshot differently (model spent its token budget reasoning and returned no answer)",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "agrees": false,
+   "error": "model spent its token budget reasoning and returned no answer"
+  }
+ },
+ {
+  "vendor": "Crocs, Inc.",
+  "check": "ofac",
+  "verdict": "review",
+  "reason": "3 similar names, none exact",
+  "records": [
+   {
+    "name": "CROCUS NANOELECTRONICS",
+    "address": "42k5 Volgogradsky Ave",
+    "type": "Entity",
+    "programs": "RUSSIA-EO14024",
+    "list": "SDN",
+    "score": "97"
+   },
+   {
+    "name": "CROSS OCEAN",
+    "address": "",
+    "type": "Vessel",
+    "programs": "IRAN-EO13846",
+    "list": "SDN",
+    "score": "91"
+   },
+   {
+    "name": "CRIOS SHIPPING L.L.C",
+    "address": "Office 1104, Maze Tower, Sheikh Zayed Road",
+    "type": "Entity",
+    "programs": "IRAN-EO13902",
+    "list": "SDN",
+    "score": "90"
+   }
+  ],
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.83,
+   "result_count_seen": 3,
+   "names_on_screen": [
+    "CROCUS NANOELECTRONICS",
+    "CROSS OCEAN",
+    "CRIOS SHIPPING L.L.C"
+   ],
+   "exact_match_seen": false,
+   "note": "None of the three returned records is the footwear company Crocs, Inc.: CROCUS NANOELECTRONICS is a Russia-related SDN entity (score 97), CROSS OCEAN is an Iran-related SDN vessel (score 91), and CRIOS SHIPPING L.L.C is an Iran-related SDN entity (score 90), all of which are only approximate string matches to the search term and not the vendor.",
+   "agrees": true
+  }
+ },
+ {
+  "vendor": "Crocs, Inc.",
+  "check": "sam",
+  "verdict": "clear",
+  "reason": "no active exclusions found",
+  "records": null,
+  "verifier": {
+   "model": "qwen3.8-27b",
+   "seconds": 1.2,
+   "result_count_seen": null,
+   "names_on_screen": [],
+   "exact_match_seen": false,
+   "note": "The page displays \"No matches found\" with no listed entities, so there are no exclusions records or similar names to evaluate for Crocs, Inc.",
+   "agrees": true
+  }
+ }
+]

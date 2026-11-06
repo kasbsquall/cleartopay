@@ -1,7 +1,7 @@
 """OFAC Sanctions List Search (sanctionssearch.ofac.treas.gov)."""
 import re
 
-from ..matching import is_exact, mentions
+from ..matching import is_exact, same_name
 from ..models import CheckOutcome, ProbeSpec, Reading, Record, Vendor, Verdict
 
 NAME = "ofac"
@@ -48,6 +48,26 @@ def judge(reading: Reading, vendor: Vendor) -> CheckOutcome:
         return CheckOutcome(Verdict.CLEAR, f"0 matches at a minimum score of {MIN_SCORE}", reading)
     if any(is_exact(r.name, vendor.legal_name) for r in reading.records):
         return CheckOutcome(Verdict.HIT, "exact name on an OFAC sanctions list", reading)
-    close = [r.name for r in reading.records if mentions(r.name, vendor.legal_name)]
-    reason = f"{reading.result_count} similar names, none exact" + (f": {close[0]}" if close else "")
-    return CheckOutcome(Verdict.REVIEW, reason, reading)
+    if len(reading.records) < reading.result_count:
+        return CheckOutcome(Verdict.REVIEW, f"{reading.result_count} similar names, only {len(reading.records)} readable", reading)
+    plausible = [r.name for r in reading.records if _could_be(r, vendor)]
+    if plausible:
+        return CheckOutcome(Verdict.REVIEW, f"{reading.result_count} similar names, none exact; could be this vendor: {plausible[0]}", reading)
+    return CheckOutcome(Verdict.CLEAR, f"{reading.result_count} similar names at score {MIN_SCORE}+; none could be this vendor "
+                        f"(closest: {reading.records[0].name})", reading)
+
+
+def _score(record: Record) -> float:
+    try:
+        return float(record.detail.get("score", ""))
+    except ValueError:
+        return 100.0
+
+
+def _could_be(record: Record, vendor: Vendor) -> bool:
+    """OFAC's results table shows the name that matched, alias or not (checked on 6 Nov 2026: a search
+    for "Central Bank of Iran" lists CENTRAL BANK OF IRAN, an alias of BANK MARKAZI JOMHOURI ISLAMI IRAN).
+    So the shown name is the one to compare. Score 100 and rows from other lists always go to a person."""
+    if _score(record) >= 100 or record.detail.get("list", "").strip().upper() != "SDN":
+        return True
+    return same_name(record.name, vendor.legal_name)

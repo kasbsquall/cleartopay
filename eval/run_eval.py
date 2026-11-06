@@ -33,6 +33,9 @@ def score_run(case: dict, result: dict) -> dict:
         "all_destroyed": all(c["containment"]["destroyed"] for c in result["checks"]),
         "seconds": round(sum(c["containment"]["seconds"] for c in result["checks"]), 2),
         "manifest_sha256": result["manifest_sha256"],
+        "reasons": {c["check"]: c["reason"] for c in result["checks"]},
+        "verifier_errors": {c["check"]: (c.get("verifier") or {}).get("error")
+                            for c in result["checks"] if (c.get("verifier") or {}).get("error")},
     }
 
 

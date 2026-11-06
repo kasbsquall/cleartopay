@@ -43,6 +43,20 @@ TRICKY = [  # expected: a human looks; auto-clearing any of these is a miss
     {"name": "Banco Nacional Cuba", "why": "SDN entity BANCO NACIONAL DE CUBA with one word dropped"},
     {"name": "Zzqx Imaginary Vendor LLC", "why": "not registered anywhere we check"},
 ]
+# Held out, added 2026-11-06 after the near-match rule changed, so that rule is tested on names it
+# was not tuned on. Picked before any run with the new rule.
+VARIANTS = [  # SDN entities typed the way a person might; must never be cleared
+    {"name": "Qods Aviation Industry", "why": "SDN QODS AVIATION INDUSTRIES, singular"},
+    {"name": "Bank Markazi", "why": "SDN BANK MARKAZI JOMHOURI ISLAMI IRAN, short name"},
+    {"name": "Aero Caribbean Airlines", "why": "SDN AEROCARIBBEAN AIRLINES, split word"},
+    {"name": "Rosneft Trading", "why": "SDN ROSNEFT TRADING S.A., without the legal form"},
+    {"name": "Bank Saderat", "why": "SDN BANK SADERAT PLC, without the legal form"},
+    {"name": "Hezbolah", "why": "misspelled HEZBOLLAH; found while reviewing the rule, so not held out"},
+]
+CLEAN_HOLDOUT_CANDIDATES = [  # kept only if Good Standing in Colorado open data and not on the SDN list
+    "Liberty Media Corporation", "Chipotle Mexican Grill, Inc.", "Palantir Technologies Inc.", "Woodward, Inc.",
+    "Pilgrim's Pride Corporation", "Gates Corporation", "Ibotta, Inc.", "Qurate Retail, Inc.",
+]
 
 
 def sdn_entities() -> set[str]:
@@ -69,7 +83,8 @@ def expected_colorado(name: str, co: dict[str, list[str]]) -> str:
 
 def main() -> None:
     sdn = sdn_entities()
-    all_names = SDN_PICKS + list(SAM_PICKS) + CLEAN_PICKS + [t["name"] for t in TRICKY]
+    all_names = (SDN_PICKS + list(SAM_PICKS) + CLEAN_PICKS + [t["name"] for t in TRICKY]
+                 + [v["name"] for v in VARIANTS] + CLEAN_HOLDOUT_CANDIDATES)
     co = colorado_status(all_names)
     cases = []
     for name in SDN_PICKS:
@@ -87,6 +102,17 @@ def main() -> None:
         cases.append({"name": item["name"], "group": "tricky", "why": item["why"],
                       "expected_decision": ["needs_human", "blocked"],
                       "expected": {"colorado": expected_colorado(item["name"], co)}})
+    for item in VARIANTS:
+        cases.append({"name": item["name"], "group": "variant", "why": item["why"],
+                      "expected_decision": ["needs_human", "blocked"],
+                      "expected": {"colorado": expected_colorado(item["name"], co)}})
+    for name in CLEAN_HOLDOUT_CANDIDATES:
+        if expected_colorado(name, co) != "verified" or normalize(name) in sdn:
+            print(f"holdout skipped: {name}")
+            continue
+        cases.append({"name": name, "group": "clean_holdout", "expected_decision": ["clear_to_pay"],
+                      "expected": {"ofac_on_sdn": False, "colorado": "verified"},
+                      "assumption": "no SAM.gov exclusion; not independently verified"})
     sdn_hash = hashlib.sha256((TRUTH / "sdn.csv").read_bytes()).hexdigest()
     out = {
         "built_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

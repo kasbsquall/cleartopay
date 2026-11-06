@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-03T19:36:16+00:00",
+  "built_at": "2026-11-06T07:46:13+00:00",
   "sources": {
     "ofac": {
       "url": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/SDN.CSV",
@@ -368,6 +368,162 @@
       "expected": {
         "colorado": "review"
       }
+    },
+    {
+      "name": "Qods Aviation Industry",
+      "group": "variant",
+      "why": "SDN QODS AVIATION INDUSTRIES, singular",
+      "expected_decision": [
+        "needs_human",
+        "blocked"
+      ],
+      "expected": {
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Bank Markazi",
+      "group": "variant",
+      "why": "SDN BANK MARKAZI JOMHOURI ISLAMI IRAN, short name",
+      "expected_decision": [
+        "needs_human",
+        "blocked"
+      ],
+      "expected": {
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Aero Caribbean Airlines",
+      "group": "variant",
+      "why": "SDN AEROCARIBBEAN AIRLINES, split word",
+      "expected_decision": [
+        "needs_human",
+        "blocked"
+      ],
+      "expected": {
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Rosneft Trading",
+      "group": "variant",
+      "why": "SDN ROSNEFT TRADING S.A., without the legal form",
+      "expected_decision": [
+        "needs_human",
+        "blocked"
+      ],
+      "expected": {
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Bank Saderat",
+      "group": "variant",
+      "why": "SDN BANK SADERAT PLC, without the legal form",
+      "expected_decision": [
+        "needs_human",
+        "blocked"
+      ],
+      "expected": {
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Hezbolah",
+      "group": "variant",
+      "why": "misspelled HEZBOLLAH; found while reviewing the rule, so not held out",
+      "expected_decision": [
+        "needs_human",
+        "blocked"
+      ],
+      "expected": {
+        "colorado": "review"
+      }
+    },
+    {
+      "name": "Liberty Media Corporation",
+      "group": "clean_holdout",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Chipotle Mexican Grill, Inc.",
+      "group": "clean_holdout",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Palantir Technologies Inc.",
+      "group": "clean_holdout",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Woodward, Inc.",
+      "group": "clean_holdout",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Pilgrim's Pride Corporation",
+      "group": "clean_holdout",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Gates Corporation",
+      "group": "clean_holdout",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
+    },
+    {
+      "name": "Ibotta, Inc.",
+      "group": "clean_holdout",
+      "expected_decision": [
+        "clear_to_pay"
+      ],
+      "expected": {
+        "ofac_on_sdn": false,
+        "colorado": "verified"
+      },
+      "assumption": "no SAM.gov exclusion; not independently verified"
     }
   ]
 }
