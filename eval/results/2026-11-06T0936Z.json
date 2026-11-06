@@ -1,0 +1,3328 @@
+{
+  "k": 3,
+  "cases_file_built_at": "2026-11-06T07:46:13+00:00",
+  "summary": {
+    "runs": 129,
+    "decision_correct": 117,
+    "dangerous_misses": 0,
+    "false_alarms": 12,
+    "runs_with_check_errors": 1,
+    "runs_with_check_mismatch": 4,
+    "sandboxes_not_destroyed": 0,
+    "avg_seconds_per_vendor": 28.1,
+    "by_group": {
+      "clean": {
+        "runs": 36,
+        "decision_correct": 30,
+        "dangerous_misses": 0,
+        "false_alarms": 6,
+        "runs_with_check_errors": 0,
+        "runs_with_check_mismatch": 0,
+        "sandboxes_not_destroyed": 0,
+        "avg_seconds_per_vendor": 28.2
+      },
+      "clean_holdout": {
+        "runs": 21,
+        "decision_correct": 15,
+        "dangerous_misses": 0,
+        "false_alarms": 6,
+        "runs_with_check_errors": 0,
+        "runs_with_check_mismatch": 3,
+        "sandboxes_not_destroyed": 0,
+        "avg_seconds_per_vendor": 28.3
+      },
+      "ofac_sdn": {
+        "runs": 24,
+        "decision_correct": 24,
+        "dangerous_misses": 0,
+        "false_alarms": 0,
+        "runs_with_check_errors": 1,
+        "runs_with_check_mismatch": 1,
+        "sandboxes_not_destroyed": 0,
+        "avg_seconds_per_vendor": 28.7
+      },
+      "sam_exclusion": {
+        "runs": 24,
+        "decision_correct": 24,
+        "dangerous_misses": 0,
+        "false_alarms": 0,
+        "runs_with_check_errors": 0,
+        "runs_with_check_mismatch": 0,
+        "sandboxes_not_destroyed": 0,
+        "avg_seconds_per_vendor": 27.8
+      },
+      "tricky": {
+        "runs": 6,
+        "decision_correct": 6,
+        "dangerous_misses": 0,
+        "false_alarms": 0,
+        "runs_with_check_errors": 0,
+        "runs_with_check_mismatch": 0,
+        "sandboxes_not_destroyed": 0,
+        "avg_seconds_per_vendor": 27.5
+      },
+      "variant": {
+        "runs": 18,
+        "decision_correct": 18,
+        "dangerous_misses": 0,
+        "false_alarms": 0,
+        "runs_with_check_errors": 0,
+        "runs_with_check_mismatch": 0,
+        "sandboxes_not_destroyed": 0,
+        "avg_seconds_per_vendor": 27.6
+      }
+    },
+    "wall_seconds": 4041.7
+  },
+  "runs": [
+    {
+      "case": "AEROCARIBBEAN AIRLINES",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "error"
+      },
+      "check_mismatches": {
+        "colorado": [
+          "review",
+          "error"
+        ]
+      },
+      "errors": [
+        "colorado"
+      ],
+      "all_destroyed": true,
+      "seconds": 28.99,
+      "manifest_sha256": "d5ae52d4277659452fef03ec47e97c9d7efbaa68a3c22488043b9b3c76dad3d2",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "Colorado registry page did not show results"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "BANK MARKAZI JOMHOURI ISLAMI IRAN",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 30.07,
+      "manifest_sha256": "c6a4099604c63229fe61e82bc52dfefc963923d72f77e2244981f105df2885ce",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "QODS AVIATION INDUSTRIES",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 31.45,
+      "manifest_sha256": "b7a031218d16b9206c0c25ad64a93040dcd39f20be6f1c29891a2012c95574a0",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "OFFICE 39",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 32.52,
+      "manifest_sha256": "39f10659f342124583774668442338193dd0387efc0ec80227693bc41da03b5a",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "only similar names: Jimmy's Office, 396 School Street, LLC"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "ROSNEFT TRADING S.A.",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.25,
+      "manifest_sha256": "306869f2ce7ad3ff451d9ffe8f5165d852ef4b1f0816969ffbada0ef3a8de440",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "BANK SADERAT PLC",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.46,
+      "manifest_sha256": "c9d7e1bb222e0b329ea7aa865b58ef15359f97a306bb3f8eb09cb614d1771a1b",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "FLEURETTE PROPERTIES LIMITED",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.91,
+      "manifest_sha256": "22821584a5cee77f492960e3e5389fa087f3fca51b955f1e00cf230fcd1ffb2c",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "ALBANIAN NATIONAL ARMY",
+      "group": "ofac_sdn",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 31.81,
+      "manifest_sha256": "63bd4b3f60df3be0adc8b0bcfed803222c08d30177cce197a1921fff3552e6bf",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "RLM Construction Co.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.65,
+      "manifest_sha256": "d2bbae69cc47db158cecaf561291e308e997679918c75bbd1058748f518555a0",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "registered, status: Name Changed"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Morales Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.81,
+      "manifest_sha256": "deb2e6d3a806930fc23b8d4ead38571ddd4f456993adae70bf233f5a6eef36fe",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Cantillon Construction Co.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.2,
+      "manifest_sha256": "c5494cd79d92e8fcfe2db23133d50c99773ecd0d6369b2619638bf091adba7f7",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "TAB CONSTRUCTION COMPANY, INC.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 30.18,
+      "manifest_sha256": "d4119a23219db8322d34ffd9afe003227802a9d60843099e57f3f0ed64c62d19",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Donora Construction Corp.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.58,
+      "manifest_sha256": "942735ff4c8fb82421cfc198ec30271f52919c9858f194521b43ecb15afa868e",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "the verifier read the screenshot differently (inference returned HTTP 503)"
+      },
+      "verifier_errors": {
+        "colorado": "inference returned HTTP 503"
+      }
+    },
+    {
+      "case": "Newton-Pollack Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.65,
+      "manifest_sha256": "eec86e045e9c9ed3ab76565b8dd4d9319e0001b32378f6a132a8dc1888725199",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Poff Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.5,
+      "manifest_sha256": "73f84be22b1f18746f83edd64216f8305d718d728857b835f58c5901bd3c74d7",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Blaine Construction Company, Inc.",
+      "group": "sam_exclusion",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.57,
+      "manifest_sha256": "88c57c63a53ab1071d4dc666e9702644c838e684dfbfe09a1fdee5105f00713d",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Microsoft Corporation",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.55,
+      "manifest_sha256": "cdbf34038ed94c15db2d08f2836dcdaf44bea500ee60b057948c5dc85698db65",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Ball Corporation",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.88,
+      "manifest_sha256": "bf0e69788e7d45334c5bcce7f47bc90ff2dd500c33fe2d1eae79291e718459e2",
+      "reasons": {
+        "ofac": "2 similar names at score 90+; none could be this vendor (closest: ABS CORPORATION)",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "DaVita Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.68,
+      "manifest_sha256": "cccd614ae2774fd13fac583758f082175b81ef57c611e2367adee414dca0c7b8",
+      "reasons": {
+        "ofac": "27 similar names, none exact; could be this vendor: DAVINA",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Vail Resorts, Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 30.06,
+      "manifest_sha256": "0c16eb64bd41832dfd8b014ec0f77caf4082d456f0e630a751a5034b74e8a7a9",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Newmont Corporation",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.33,
+      "manifest_sha256": "2ad9a00406c4b37215d3ba7dfd04c7ddefdedd564bed13bd2847346b2fa19432",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Arrow Electronics, Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.12,
+      "manifest_sha256": "9c6a208d178bbaadf25591b8d99b10caaefe752f52be494b5e2e6fd17926e592",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Molson Coors Beverage Company",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.29,
+      "manifest_sha256": "b30ce09ac6027b7435408fcfc5f6ca7660ce499042d410e7280fb29554f7ce2d",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "The Western Union Company",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 31.2,
+      "manifest_sha256": "8196f10a0751f5b8a43646fecb5dcc5bcd6274da12edf3b23da176e5cdb65777",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Crocs, Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.39,
+      "manifest_sha256": "be8966bfc4fe4f556f639fe41fdad4bc9bc43b6a52e8b6f165667df7955a561e",
+      "reasons": {
+        "ofac": "3 similar names, none exact; could be this vendor: CROCUS NANOELECTRONICS",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Advanced Energy Industries, Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 30.03,
+      "manifest_sha256": "6185d64bf805453e4bd2c41b14bfb811f6dbf0376de0c4ed8d827490a9b13880",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Ovintiv Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.54,
+      "manifest_sha256": "064987b212fc3c02e12add12d14c8346c4131ea3f84a94b031c84d4d87436679",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Frontier Airlines, Inc.",
+      "group": "clean",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.73,
+      "manifest_sha256": "650f936ed6e1bfc1dc3881bc82e0539923e24a65e133527ec5ed59c89af52d66",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Banco Nacional Cuba",
+      "group": "tricky",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.5,
+      "manifest_sha256": "95c2ac3af51b2f131efbd41e22b9d83c699377b97defedaa30af130957e018e6",
+      "reasons": {
+        "ofac": "3 similar names, none exact; could be this vendor: BANCO NACIONAL DE CUBA",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Zzqx Imaginary Vendor LLC",
+      "group": "tricky",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.61,
+      "manifest_sha256": "e1e846ea581037ad55fde0e9b7d7dfa56844fac241d53279f63e892cc6e21e05",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Qods Aviation Industry",
+      "group": "variant",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.79,
+      "manifest_sha256": "85e9900e03a9c138bf2292c1638ba4cd63824d9ff17705967c7f3ba78e462bf0",
+      "reasons": {
+        "ofac": "1 similar names, none exact; could be this vendor: QODS AVIATION INDUSTRIES",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Bank Markazi",
+      "group": "variant",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "review",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.27,
+      "manifest_sha256": "a09f55185cb6340691290f5e47a18c2b4af90b79d7a50e8ab643ef2f0873162d",
+      "reasons": {
+        "ofac": "4 similar names, none exact; could be this vendor: BANK MARKAZI IRAN",
+        "sam": "2 exclusion records to compare",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Aero Caribbean Airlines",
+      "group": "variant",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.67,
+      "manifest_sha256": "5f0376801face4a8ca178fcca2fd223dd1f78ccfa1e8de6c0323175a01cedf5a",
+      "reasons": {
+        "ofac": "2 similar names, none exact; could be this vendor: AEROCARIBBEAN AIRLINES",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Rosneft Trading",
+      "group": "variant",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "review",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.8,
+      "manifest_sha256": "f914cfa0b5cc4c12f3884b1183fb751a76f6cd52bd13249e6eccd1c42f9f40c9",
+      "reasons": {
+        "ofac": "3 similar names, none exact; could be this vendor: ROSNEFT TRADING S.A.",
+        "sam": "2 exclusion records to compare",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Bank Saderat",
+      "group": "variant",
+      "rep": 0,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "review",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.81,
+      "manifest_sha256": "3fd406fefac3a43232618d9cdb05c68bbde5a9090120744af892c10023887229",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "2 exclusion records to compare",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Hezbolah",
+      "group": "variant",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.27,
+      "manifest_sha256": "a7c296d5bf272bd92a40cb84d424d87f95fdc8025c0fa3e086e2332a76b639c9",
+      "reasons": {
+        "ofac": "11 similar names, none exact; could be this vendor: ANSAR HEZBOLLAH",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Liberty Media Corporation",
+      "group": "clean_holdout",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.2,
+      "manifest_sha256": "898f784437c88821f74d4c97f61df4459d50bfb4fb757fdb5c37be15fe731644",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Chipotle Mexican Grill, Inc.",
+      "group": "clean_holdout",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.52,
+      "manifest_sha256": "c98c4fc4c13165a4356eefcb4bb949ffb53927df292678673da2baed786f150c",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Palantir Technologies Inc.",
+      "group": "clean_holdout",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.99,
+      "manifest_sha256": "3b72740423c898588122ec904c510155bad1737f663308f7a6135cbc0ac678dd",
+      "reasons": {
+        "ofac": "2 similar names, none exact; could be this vendor: JOINT STOCK COMPANY MOSKOW EXPERIMENTAL MACHINE-BUILDING PLANT - COMPOSITE TECHNOLOGIES",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Woodward, Inc.",
+      "group": "clean_holdout",
+      "rep": 0,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {
+        "colorado": [
+          "verified",
+          "review"
+        ]
+      },
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.85,
+      "manifest_sha256": "70de0f9e09375ad3e4508bd889d69bd3148280d0c545a06e6fe79c4186ddbe19",
+      "reasons": {
+        "ofac": "1 similar names, none exact; could be this vendor: WOODFORD ENTERPRISES LIMITED SASU",
+        "sam": "no active exclusions found",
+        "colorado": "only similar names: Brent Woodward, Inc."
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Pilgrim's Pride Corporation",
+      "group": "clean_holdout",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.63,
+      "manifest_sha256": "0182b955998c670d12b92c120116f2e7859d103b4dc463d5d276230daca4f4be",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Gates Corporation",
+      "group": "clean_holdout",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.49,
+      "manifest_sha256": "321167914a981cd4eb864a5afd05f455d69df464baae1cff9cf999277d0af5af",
+      "reasons": {
+        "ofac": "1 similar names at score 90+; none could be this vendor (closest: ABS CORPORATION)",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Ibotta, Inc.",
+      "group": "clean_holdout",
+      "rep": 0,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.51,
+      "manifest_sha256": "8fd9161336cb420c559de9b32bc7fce9b94f2e0e6841a8c9c5de1c99a8c75c7c",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "AEROCARIBBEAN AIRLINES",
+      "group": "ofac_sdn",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.44,
+      "manifest_sha256": "9824667bd2c4ed69d04e6d21bc0dc1971ecde3e0e00caa4daa2b9d83063227a9",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "BANK MARKAZI JOMHOURI ISLAMI IRAN",
+      "group": "ofac_sdn",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.88,
+      "manifest_sha256": "40d8cc5e198e606f4fec35b9f3bbc6b4ba335255bc2abf88d2a1415177f9fee9",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "QODS AVIATION INDUSTRIES",
+      "group": "ofac_sdn",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.74,
+      "manifest_sha256": "ad70690474fd7687149912b6513f509e98a1dcee5a9d795e933bcb0313d52efb",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "OFFICE 39",
+      "group": "ofac_sdn",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.62,
+      "manifest_sha256": "baf9308370adf170ab7f5846ff0dfcc44cf49c4573128dc27fb7a0b7c789558b",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "only similar names: Jimmy's Office, 396 School Street, LLC"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "ROSNEFT TRADING S.A.",
+      "group": "ofac_sdn",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.48,
+      "manifest_sha256": "2bb74d8c5d025ce922eda4effad6cace1cb5ab8c26f895c063b72f0a8a4cc7cc",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "BANK SADERAT PLC",
+      "group": "ofac_sdn",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.96,
+      "manifest_sha256": "49fcb82360e3f9cb1503b07e7e03acac1534937eadbb3453f12cb86a4bb042fc",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "FLEURETTE PROPERTIES LIMITED",
+      "group": "ofac_sdn",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.48,
+      "manifest_sha256": "dbcad6498839a099cb1373923b652ad8c6926943b99e67a2fe1269096b905612",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "ALBANIAN NATIONAL ARMY",
+      "group": "ofac_sdn",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 31.46,
+      "manifest_sha256": "d1e4161ad0e8adf67571af82f76119d4ea93428c338297c3cbc632004644725d",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "RLM Construction Co.",
+      "group": "sam_exclusion",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.44,
+      "manifest_sha256": "59a1a17985a2eac7d74ee10205a6bd2b596f0eb4635686936712550bf6a8600c",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "registered, status: Name Changed"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Morales Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.05,
+      "manifest_sha256": "31e56efc29148e3666dbc80fbd3b4cff0bfcb72e6f9cffdbe47113399e8ee6d6",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Cantillon Construction Co.",
+      "group": "sam_exclusion",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 29.43,
+      "manifest_sha256": "e7d94c23e4fd19cd1e0d7aad20178d23aff9195a149b817841d4d1918602c0a3",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "TAB CONSTRUCTION COMPANY, INC.",
+      "group": "sam_exclusion",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.27,
+      "manifest_sha256": "c7c3c7a7eb4fc65421271e631e6b4fa1c0427860df97e4ed50b2e6cd26476f73",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Donora Construction Corp.",
+      "group": "sam_exclusion",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.09,
+      "manifest_sha256": "3406e534801fde94855d2f54c35053e72c4394bc500b380164e15e51b6236bf9",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Newton-Pollack Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.77,
+      "manifest_sha256": "69db19e837d50754953cd033b1f1c3a0abda3addf3a296b48da9d1c8a2f20b5f",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Poff Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.02,
+      "manifest_sha256": "89038986ee0f984ddcaa324c7d653ca47f0f37e677c1ae69a0c3c06fcba834b9",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Blaine Construction Company, Inc.",
+      "group": "sam_exclusion",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.57,
+      "manifest_sha256": "7675756efba332be57a60bd564a53b9365ff12d8b3176a59ea49b866289e6f39",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Microsoft Corporation",
+      "group": "clean",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.01,
+      "manifest_sha256": "e76ead007eefff3bee149127d9fdae4de5dcf5a651b7ca7214b8972dd7762635",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Ball Corporation",
+      "group": "clean",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.51,
+      "manifest_sha256": "4a827445413033c2443020f59c7f05463489515f5c77bca9baaa05b93ce63d03",
+      "reasons": {
+        "ofac": "2 similar names at score 90+; none could be this vendor (closest: ABS CORPORATION)",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "DaVita Inc.",
+      "group": "clean",
+      "rep": 1,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.31,
+      "manifest_sha256": "01e9878a6bd06feaa42ce8ab478315a88849d6e234dcbb2e47f28ebfd9f1159d",
+      "reasons": {
+        "ofac": "27 similar names, none exact; could be this vendor: DAVINA",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Vail Resorts, Inc.",
+      "group": "clean",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.96,
+      "manifest_sha256": "1fb91936779d36067c42999e57b8e3439ec7a40563e00cc1f3358b4d300f368f",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Newmont Corporation",
+      "group": "clean",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.54,
+      "manifest_sha256": "e51533fc2d1695a7985a46ad52b8aaf887ca337dfc20ed565ea407ca1fa695e4",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Arrow Electronics, Inc.",
+      "group": "clean",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.78,
+      "manifest_sha256": "4504372c33597e3425625113c88a2c09673522007f853bccb1bdbfa5ca7de7fd",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Molson Coors Beverage Company",
+      "group": "clean",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 29.63,
+      "manifest_sha256": "299f4362d0e288ea69f766bf3ceac9dc1b6d3dc6673018924b6aab2dca8219d1",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "The Western Union Company",
+      "group": "clean",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 29.92,
+      "manifest_sha256": "5cc870b728ed5dc031070de7437a030941ee72cff584516761454eb1e65596e8",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Crocs, Inc.",
+      "group": "clean",
+      "rep": 1,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.23,
+      "manifest_sha256": "d442d473f08ab8cd3bd97439f85e4cf006ade00b8cb8b2e850defcdbda4e17fc",
+      "reasons": {
+        "ofac": "3 similar names, none exact; could be this vendor: CROCUS NANOELECTRONICS",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Advanced Energy Industries, Inc.",
+      "group": "clean",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.9,
+      "manifest_sha256": "4e1934529959e63f01498482b8409412019d655337582152f33c7eb78a259631",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Ovintiv Inc.",
+      "group": "clean",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.29,
+      "manifest_sha256": "d081298eed68d4f06d9a4bdfb684536964831ca04922f5dc3fc6c98c6d3a5e36",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Frontier Airlines, Inc.",
+      "group": "clean",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.4,
+      "manifest_sha256": "081bd8ea1ef6dc95ee27afbaa1a7f469cc5e5801f94454b6c3150eefed324927",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Banco Nacional Cuba",
+      "group": "tricky",
+      "rep": 1,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.51,
+      "manifest_sha256": "020e5b698a892a33188c9039603efddba660a8cbf8380b61b8ae468ed3f8f868",
+      "reasons": {
+        "ofac": "3 similar names, none exact; could be this vendor: BANCO NACIONAL DE CUBA",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Zzqx Imaginary Vendor LLC",
+      "group": "tricky",
+      "rep": 1,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.44,
+      "manifest_sha256": "6543a1da8104d55f33dbc5d53d7ffcfd1905f08cea88f32e79b3d9525a762c29",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Qods Aviation Industry",
+      "group": "variant",
+      "rep": 1,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.87,
+      "manifest_sha256": "4611130cee43bccfcb16d0d07f12faadef875996c074b7588cc5e6968484bac6",
+      "reasons": {
+        "ofac": "1 similar names, none exact; could be this vendor: QODS AVIATION INDUSTRIES",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Bank Markazi",
+      "group": "variant",
+      "rep": 1,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "review",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.84,
+      "manifest_sha256": "ec9c42367aa7f3d9f93d6c1794e3e674590769319b58b4ff276c963db98f76ff",
+      "reasons": {
+        "ofac": "4 similar names, none exact; could be this vendor: BANK MARKAZI IRAN",
+        "sam": "2 exclusion records to compare",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Aero Caribbean Airlines",
+      "group": "variant",
+      "rep": 1,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.26,
+      "manifest_sha256": "50356df026ff35a98511f5aabeb3c2e20e60f250984e27875bc5cafea9ffd01c",
+      "reasons": {
+        "ofac": "2 similar names, none exact; could be this vendor: AEROCARIBBEAN AIRLINES",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Rosneft Trading",
+      "group": "variant",
+      "rep": 1,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "review",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.82,
+      "manifest_sha256": "550ceff50ecc192f2957939c0f2b1311dc585b00f89a4cd6685f331162d0d7e5",
+      "reasons": {
+        "ofac": "3 similar names, none exact; could be this vendor: ROSNEFT TRADING S.A.",
+        "sam": "2 exclusion records to compare",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Bank Saderat",
+      "group": "variant",
+      "rep": 1,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "review",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.19,
+      "manifest_sha256": "e6a85aa1b8b1d66804eeff6da8675132ec8de5a82d640646919da89b2609c24b",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "2 exclusion records to compare",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Hezbolah",
+      "group": "variant",
+      "rep": 1,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.35,
+      "manifest_sha256": "27e8e0e62981fc137d4488a4d0408ef442f2f683ed0f2806782045bc512e3119",
+      "reasons": {
+        "ofac": "11 similar names, none exact; could be this vendor: ANSAR HEZBOLLAH",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Liberty Media Corporation",
+      "group": "clean_holdout",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.92,
+      "manifest_sha256": "d3aa1bb5907ce61f2d09eff263ea31712ea6d29a433b2ad1a09e1f9aa74ba086",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Chipotle Mexican Grill, Inc.",
+      "group": "clean_holdout",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.6,
+      "manifest_sha256": "3afd67b643f4894722ef34c72d36c3f49fdd296ba29592b395e59832ab6ed329",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Palantir Technologies Inc.",
+      "group": "clean_holdout",
+      "rep": 1,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 29.94,
+      "manifest_sha256": "c1052efca8503198c9ce448e1597011f121e7ad141ab888a9f47d42cb5e4b35f",
+      "reasons": {
+        "ofac": "2 similar names, none exact; could be this vendor: JOINT STOCK COMPANY MOSKOW EXPERIMENTAL MACHINE-BUILDING PLANT - COMPOSITE TECHNOLOGIES",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Woodward, Inc.",
+      "group": "clean_holdout",
+      "rep": 1,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {
+        "colorado": [
+          "verified",
+          "review"
+        ]
+      },
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.56,
+      "manifest_sha256": "4edd4dc6260fab4973a7518703eec054f4c8aed46933511d29aab544448b5022",
+      "reasons": {
+        "ofac": "1 similar names, none exact; could be this vendor: WOODFORD ENTERPRISES LIMITED SASU",
+        "sam": "no active exclusions found",
+        "colorado": "only similar names: Brent Woodward, Inc."
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Pilgrim's Pride Corporation",
+      "group": "clean_holdout",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.33,
+      "manifest_sha256": "2bfe01158b091ce2ee75e4bb32a73be8a504fb5e57dc9089d3ab41ec47bf96bf",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Gates Corporation",
+      "group": "clean_holdout",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.9,
+      "manifest_sha256": "95df1ae1f01333e71895d030b984319be0c303da57fda2887181499a45b37b72",
+      "reasons": {
+        "ofac": "1 similar names at score 90+; none could be this vendor (closest: ABS CORPORATION)",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Ibotta, Inc.",
+      "group": "clean_holdout",
+      "rep": 1,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.63,
+      "manifest_sha256": "011f32f77d9c042a75aeb4c2ad1f38765775ddc75b364454b024e4b2bc175615",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "AEROCARIBBEAN AIRLINES",
+      "group": "ofac_sdn",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.55,
+      "manifest_sha256": "b4fa85e86ad9ee22a063b75e9a7a6d409aa4e0d824d88a968973f68e86c16578",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "BANK MARKAZI JOMHOURI ISLAMI IRAN",
+      "group": "ofac_sdn",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.79,
+      "manifest_sha256": "db856673ce31633ac000ce09bb651dabdc2a609776016d3a2cd3fdd240795d80",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "QODS AVIATION INDUSTRIES",
+      "group": "ofac_sdn",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.94,
+      "manifest_sha256": "a2f881148758eadef989b6d3815c75f36f51e558205e6f8eb02b021fea25aa1d",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "OFFICE 39",
+      "group": "ofac_sdn",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 29.17,
+      "manifest_sha256": "1f5ed2d799ea9c7ec53c6c4dc886d21160a0673726281761534f3119be2677ac",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "only similar names: Jimmy's Office, 396 School Street, LLC"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "ROSNEFT TRADING S.A.",
+      "group": "ofac_sdn",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.8,
+      "manifest_sha256": "3fd5b3acb9b037310ca38e6f075499b54c7525faca8d7a69942cb86999615a71",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "BANK SADERAT PLC",
+      "group": "ofac_sdn",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.22,
+      "manifest_sha256": "848578008c2f853a2c89151726696b1f4a935cc6fad43e80d983c62ac2455c6a",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "FLEURETTE PROPERTIES LIMITED",
+      "group": "ofac_sdn",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.32,
+      "manifest_sha256": "94045c716e18291a03e072ea22ce95e7b3adaebaff36ef7a26e96ddf81af37d1",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "ALBANIAN NATIONAL ARMY",
+      "group": "ofac_sdn",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 29.88,
+      "manifest_sha256": "779ffeb5a4d9a2162924e58ed672d21a8b4ada3a7161a3cb00cec3ae684aafdc",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "RLM Construction Co.",
+      "group": "sam_exclusion",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.87,
+      "manifest_sha256": "aea5768e8a918d0681e5d659b04f403baa6e0942ff27c0cb42f477c5f4cf7533",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "registered, status: Name Changed"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Morales Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.6,
+      "manifest_sha256": "7287ac0460533bc6e0c4726aa5842ab9e1c52abd249e305d556a5a0341d8f6af",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Cantillon Construction Co.",
+      "group": "sam_exclusion",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.46,
+      "manifest_sha256": "18851be09b5663fda4e00d7a50a1bbb2ffbeef730fe8b04482aacd647adad42b",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "TAB CONSTRUCTION COMPANY, INC.",
+      "group": "sam_exclusion",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.69,
+      "manifest_sha256": "5e9f08c8e1d9a8aef73ff5647a102f42bd4e02044bf6fb2106d89eb1b33906cb",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Donora Construction Corp.",
+      "group": "sam_exclusion",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.18,
+      "manifest_sha256": "f65aa0a3461e9ab11ec147c30957cf044e4b639c5f5852691357915554dcbfa1",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Newton-Pollack Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.72,
+      "manifest_sha256": "32dd207c4bb9e8cc6099a2db03bfe4ceee00830788d96fccd2110b9b3ec2ae64",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Poff Construction, Inc.",
+      "group": "sam_exclusion",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.52,
+      "manifest_sha256": "dd053f037c1f28ab71d11f0be73601466be5dd1433eaa3c3025af5d661134605",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Blaine Construction Company, Inc.",
+      "group": "sam_exclusion",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "hit",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.9,
+      "manifest_sha256": "c7e8220a7ffdbc1209a7bd385f712b837d3e815d03d1dba1336e41e9a1dcfa0d",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "active exclusion under this exact name",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Microsoft Corporation",
+      "group": "clean",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.61,
+      "manifest_sha256": "9b0c48dc1641e43aaf15a9537211b067d3966b2e0577ce181bbe73eb7b2ed6a0",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Ball Corporation",
+      "group": "clean",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.9,
+      "manifest_sha256": "079f68287801f59af6c72b77831261282e158d773d3bb15d6b71b956ba40b6db",
+      "reasons": {
+        "ofac": "2 similar names at score 90+; none could be this vendor (closest: ABS CORPORATION)",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "DaVita Inc.",
+      "group": "clean",
+      "rep": 2,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.9,
+      "manifest_sha256": "97644956705284543a0d0c9391ce700ed7a7a9ccddf51b3865797c13d2516c68",
+      "reasons": {
+        "ofac": "27 similar names, none exact; could be this vendor: DAVINA",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Vail Resorts, Inc.",
+      "group": "clean",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.25,
+      "manifest_sha256": "eec8f78cc2217c4f185aa4b2fcfcdab7996f8f52d3da9395230c66c3ea165b87",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Newmont Corporation",
+      "group": "clean",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.92,
+      "manifest_sha256": "5b54f3597fd85b394cb9b3b0332cc2c43bb40279042f3ec0d04bbca60032ecb3",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Arrow Electronics, Inc.",
+      "group": "clean",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.89,
+      "manifest_sha256": "606b2432c87a1fe86eaf6d8627d716cd9eff955bb933aa639adfeab604b01bae",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Molson Coors Beverage Company",
+      "group": "clean",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.32,
+      "manifest_sha256": "d10b525b9ebf18891e259248e1f6c3aec8a6f0f8f4b995524cdd965b4d060d12",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "The Western Union Company",
+      "group": "clean",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 30.2,
+      "manifest_sha256": "4cb155c3de1eb6351f646710a5e94af1ccca3e4c7f4194910ef096814485473c",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Crocs, Inc.",
+      "group": "clean",
+      "rep": 2,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.22,
+      "manifest_sha256": "aa704b5f716665484bec1b350980bf5f4d843edda9100f787fa95b2b128063cd",
+      "reasons": {
+        "ofac": "3 similar names, none exact; could be this vendor: CROCUS NANOELECTRONICS",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Advanced Energy Industries, Inc.",
+      "group": "clean",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.38,
+      "manifest_sha256": "25882fb22b2ebbba0cd348ba46ea0a3f460f8dbff44d6df7fa6c44e4ce86ffc5",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Ovintiv Inc.",
+      "group": "clean",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.78,
+      "manifest_sha256": "4cf4438feff739c613d0369f467920edaf8a4a14780a195718d8fc3679fe1b4b",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Frontier Airlines, Inc.",
+      "group": "clean",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 29.03,
+      "manifest_sha256": "c6f4022c96c6a614db60859203cfc8b3f84eb480ff1853d95acd0b706a93a792",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Banco Nacional Cuba",
+      "group": "tricky",
+      "rep": 2,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.34,
+      "manifest_sha256": "08c467c561496cbf1e77a88928065871167265f5fce676b887c02124309dec6a",
+      "reasons": {
+        "ofac": "3 similar names, none exact; could be this vendor: BANCO NACIONAL DE CUBA",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Zzqx Imaginary Vendor LLC",
+      "group": "tricky",
+      "rep": 2,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.39,
+      "manifest_sha256": "912fff0c3a3148573292ac37b1ef2aa4fa9b4dde5649d90e411d6b5878f595c6",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Qods Aviation Industry",
+      "group": "variant",
+      "rep": 2,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.23,
+      "manifest_sha256": "90880a2afa410b90efa989aa4df6a68487e4c7bf61b7cb3ee7db213998238f6e",
+      "reasons": {
+        "ofac": "1 similar names, none exact; could be this vendor: QODS AVIATION INDUSTRIES",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Bank Markazi",
+      "group": "variant",
+      "rep": 2,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "review",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.93,
+      "manifest_sha256": "13598861c6316fe7a1a67eb7767a6b7ee0d197a846b95b2c2c2c8f75af54669f",
+      "reasons": {
+        "ofac": "4 similar names, none exact; could be this vendor: BANK MARKAZI IRAN",
+        "sam": "2 exclusion records to compare",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Aero Caribbean Airlines",
+      "group": "variant",
+      "rep": 2,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.47,
+      "manifest_sha256": "22523f928b0e4675d942e9ea2d63489ca5dc7c19876a02a5bf604ccaaeab0635",
+      "reasons": {
+        "ofac": "2 similar names, none exact; could be this vendor: AEROCARIBBEAN AIRLINES",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Rosneft Trading",
+      "group": "variant",
+      "rep": 2,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "review",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.32,
+      "manifest_sha256": "9178d7025e0ce173015a1e841b98ec05d1c41f432550fb0da54e510049cc7c24",
+      "reasons": {
+        "ofac": "3 similar names, none exact; could be this vendor: ROSNEFT TRADING S.A.",
+        "sam": "2 exclusion records to compare",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Bank Saderat",
+      "group": "variant",
+      "rep": 2,
+      "decision": "blocked",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "hit",
+        "sam": "review",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.07,
+      "manifest_sha256": "324da91bf4a105dca7693cf8237d8aea40e250eb11d7114e5acde3803bd1b812",
+      "reasons": {
+        "ofac": "exact name on an OFAC sanctions list",
+        "sam": "2 exclusion records to compare",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Hezbolah",
+      "group": "variant",
+      "rep": 2,
+      "decision": "needs_human",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.77,
+      "manifest_sha256": "58ce3c8ccde57b575d5a2cd1c310ddb243e53ebd92a5a11446a20ff4504eee3d",
+      "reasons": {
+        "ofac": "11 similar names, none exact; could be this vendor: ANSAR HEZBOLLAH",
+        "sam": "no active exclusions found",
+        "colorado": "no Colorado business registered under this name"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Liberty Media Corporation",
+      "group": "clean_holdout",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.34,
+      "manifest_sha256": "81c4ba3749b2f85fe29adaf0a1d98ef2141722555febcb0f888945363389c8e0",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Chipotle Mexican Grill, Inc.",
+      "group": "clean_holdout",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.39,
+      "manifest_sha256": "a7ec9db314511d81fe0dfa9751a07cb199d8d58ff060c37f60f65893f10e8830",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Palantir Technologies Inc.",
+      "group": "clean_holdout",
+      "rep": 2,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 35.38,
+      "manifest_sha256": "41e2eade3b3ff57d5e51e2f05f41bda897afd129f790bfa3ad446b30c783210d",
+      "reasons": {
+        "ofac": "2 similar names, none exact; could be this vendor: JOINT STOCK COMPANY MOSKOW EXPERIMENTAL MACHINE-BUILDING PLANT - COMPOSITE TECHNOLOGIES",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Woodward, Inc.",
+      "group": "clean_holdout",
+      "rep": 2,
+      "decision": "needs_human",
+      "decision_ok": false,
+      "dangerous_miss": false,
+      "false_alarm": true,
+      "verdicts": {
+        "ofac": "review",
+        "sam": "clear",
+        "colorado": "review"
+      },
+      "check_mismatches": {
+        "colorado": [
+          "verified",
+          "review"
+        ]
+      },
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.14,
+      "manifest_sha256": "236c2f36cf66bfdeba7f2ff502847f2c953236bc6842cf106c91ff692d23660a",
+      "reasons": {
+        "ofac": "1 similar names, none exact; could be this vendor: WOODFORD ENTERPRISES LIMITED SASU",
+        "sam": "no active exclusions found",
+        "colorado": "only similar names: Brent Woodward, Inc."
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Pilgrim's Pride Corporation",
+      "group": "clean_holdout",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 28.01,
+      "manifest_sha256": "52c13e715b5b0fb11cc332bf8ee664c4a61d12dc9e182c773f8032604acb245a",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Gates Corporation",
+      "group": "clean_holdout",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.72,
+      "manifest_sha256": "bfac1f95f0d67f951d72bd32d108314d92732ff804f5ed6203e93451c020d0cd",
+      "reasons": {
+        "ofac": "1 similar names at score 90+; none could be this vendor (closest: ABS CORPORATION)",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    },
+    {
+      "case": "Ibotta, Inc.",
+      "group": "clean_holdout",
+      "rep": 2,
+      "decision": "clear_to_pay",
+      "decision_ok": true,
+      "dangerous_miss": false,
+      "false_alarm": false,
+      "verdicts": {
+        "ofac": "clear",
+        "sam": "clear",
+        "colorado": "verified"
+      },
+      "check_mismatches": {},
+      "errors": [],
+      "all_destroyed": true,
+      "seconds": 27.44,
+      "manifest_sha256": "884b71fc20e18a1f96701b9b9ad1e28f34b80a676bc82df59bddd3dc2bfab315",
+      "reasons": {
+        "ofac": "0 matches at a minimum score of 90",
+        "sam": "no active exclusions found",
+        "colorado": "registered and in good standing"
+      },
+      "verifier_errors": {}
+    }
+  ]
+}

@@ -57,7 +57,7 @@ The file is what the auditor asks for: screenshots with hashes and timestamps, n
 
 The checks are real: the microVMs open the live government sites and search them. Examples from runs on the public deployment:
 
-- "Ball Corporation": OFAC returned two similar names at score 91 (ABS CORPORATION, Dubai, SDGT; B K SALES CORPORATION, India, IRAN-EO13846). Neither shares a close word with "Ball", so the check is clear and both rows stay in the file with the verifier's note on each. <!-- BALL: confirm with the re-recorded run id -->
+- "Ball Corporation": OFAC returned two similar names at score 91 (ABS CORPORATION, Dubai, SDGT; B K SALES CORPORATION, India, IRAN-EO13846). Neither shares a close word with "Ball", so the check is clear and both rows stay in the file with the verifier's note on each. Decision: clear to pay (`2026-11-06T0936Z.json`, all three runs).
 - "Hezbolah" (misspelled): OFAC returned 11 rows such as ANSAR HEZBOLLAH at score 98, none exact. HEZBOLLAH is one letter away, so it goes to a human.
 - "BANK SADERAT PLC": OFAC exact match. Decision: blocked.
 
@@ -72,7 +72,18 @@ The containment moment is the vendor website. "Pinecrest Industrial Supply" is a
 
 All numbers come from files in `eval/results/`. Ground truth comes from sources the tool does not read: the official OFAC SDN.CSV export, SAM.gov exclusions read by hand on 2026-11-03, and Colorado's open data set of business entities (`eval/build_cases.py`).
 
-<!-- K3B: final k=3 run on 43 vendors with the current rules goes here: decisions, vendors that must not be paid cleared (of 18 + 6 variants, x3), false alarms on the 12 original and the 7 held-out clean vendors, microVMs not destroyed, seconds per vendor -->
+**Final run: 43 vendors, three runs each, with the current rules** (`eval/results/2026-11-06T0936Z.json`, 6 Nov 2026, 08:28 to 09:36 UTC).
+
+| | Result |
+|---|---|
+| Runs that cleared a vendor that must not be paid | **0 of 72** (24 vendors x 3: 8 on the SDN list, 8 with active SAM.gov exclusions, 2 tricky names, 6 sanctioned names typed differently) |
+| Correct decisions | 117 of 129 (39 of 43 in each run, the same 39) |
+| Clean vendors sent to a person | 2 of the 12 original (DaVita: DAVINA, a sanctioned vessel, is one letter away; Crocs: CROCUS NANOELECTRONICS) and 2 of the 7 held out (Palantir: two rows from a non-SDN list; Woodward: WOODFORD ENTERPRISES, and Colorado's search listed only "Brent Woodward, Inc."), the same four in every run |
+| Sanctioned names typed differently (6) | all sent to a person in every run, none cleared |
+| Checks that errored | 1 of 387 (one Colorado search) |
+| MicroVMs not destroyed | 0 of 387 |
+| Time per vendor, three checks | 28.1 s average |
+
 
 **How we got here.** The numbers changed as we measured more, and every run is kept:
 
@@ -87,7 +98,7 @@ The five false alarms had two causes, both fixed on 6 Nov:
 - **OFAC near names.** Any row at score 90+ sent the vendor to a human, so "Ball Corporation" stopped on ABS CORPORATION. Now a row stops the vendor only if its name could be the vendor's: same words allowing plurals, a letter or two of difference, swapped letters, accents, abbreviations, prefixes (Air, Airlines) and transliterations (Mohamed, Muhammad), or one name containing the other. Score 100, rows from lists other than the SDN list and rows we could not read always go to a human. OFAC's table shows the name that matched, alias or not (a search for "Central Bank of Iran" lists CENTRAL BANK OF IRAN, an alias of BANK MARKAZI JOMHOURI ISLAMI IRAN), so that is the name compared. SAM.gov keeps the old rule: any result that is not an active exact exclusion goes to a human, because its search also matches fields we cannot see. Rule and cases: `backend/app/matching.py`, `backend/tests/test_checks.py`.
 - **The verifier ran out of tokens.** `qwen3.8-27b` reasoned for up to 7,400 tokens over an empty SAM.gov page and sometimes never answered, which counts as a disagreement. Reading a count off a screenshot needs no reasoning: with it off, it read 10, 27 and 0 rows correctly in 6 of 6 runs, in about a second (`eval/verifier_budget.py`, `verifier-budget.json`).
 
-Two independent reviews tried to break the new rule before it shipped and found misspellings it let through ("Hezbolah", "Hamaz", "Huawai", "Mahan Airlines"); all of them now go to a human and are tests. The price is that some clean vendors still stop: "Crocs" stops on CROCUS NANOELECTRONICS, one letter away. To check the rule on names it was not tuned on, 6 misspelled sanctioned names and 7 more clean Colorado companies were added to the eval (`eval/cases.json`; the original 30 are unchanged, `cases-2026-11-03.json`). Five of the six variants and all seven clean companies were picked before the rule ran; "Hezbolah" was found during the review, so it is not held out. The rule was not changed after seeing how the held-out vendors came out.
+Two independent reviews tried to break the new rule before it shipped and found misspellings it let through ("Hezbolah", "Hamaz", "Huawai", "Mahan Airlines"); all of them now go to a human and are tests. The price is that some clean vendors still stop: "Crocs" stops on CROCUS NANOELECTRONICS, one letter away. To check the rule on names it was not tuned on, 6 sanctioned names typed the way a person might (one misspelled, one split word, one singular, three without the full legal name) and 7 more clean Colorado companies were added to the eval (`eval/cases.json`; the original 30 are unchanged, `cases-2026-11-03.json`). Five of the six variants and all seven clean companies were picked before the rule ran; "Hezbolah" was found during the review, so it is not held out. The rule was not changed after seeing how the held-out vendors came out.
 
 **Prompt injection on the vendor website** (`eval/baseline_injection.py`). Ten seeded pages, each with a different injection (fake system note, "ignore previous instructions", changed bank details with fictional numbers, maintenance mode, developer mode, and others), plus a clean control page.
 

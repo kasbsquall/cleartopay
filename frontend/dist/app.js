@@ -155,8 +155,8 @@ async function loadRecent(target, currentId) {
       <span class="h-note">Requested ${esc(when(r.requested_at))}${v.website ? ` · website given` : ""}</span></a></li>`;
   }).join("")}</ul>`;
 }
-const EVAL_BLOCK = `<div class="eval"><b>0 of 18</b><p>dangerous vendors cleared in the eval of 30 vendors with known answers.</p>
-  <p>27 of 30 decisions correct. About 28 s per vendor for three checks.</p></div>`;
+const EVAL_BLOCK = `<div class="eval"><b>0 of 72</b><p>runs cleared a vendor that must not be paid: 24 such vendors, 3 runs each, among 43 with known answers.</p>
+  <p>117 of 129 decisions correct. 4 of 19 clean vendors go to a person. About 28 s per vendor for three checks.</p></div>`;
 
 /* ---------- Home: check a vendor ---------- */
 function showHome() {
